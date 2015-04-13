@@ -45,9 +45,9 @@ void Bomb1::setRotation(float r){
 void Bomb1::update(float time){
 	// manage the particle system: 
 	// as long as the bomb exists, the fire particles will stay alive:
-	fire->resetTimer();
-	fire->burst(static_cast<int>(time * 30));
-	fire->setEmitter(body->GetPosition().x, body->GetPosition().y, body->GetAngle());
+	//fire->resetTimer();
+	//fire->burst(static_cast<int>(time * 30));
+	//fire->setEmitter(body->GetPosition().x, body->GetPosition().y, body->GetAngle());
 
 	timer += time;
 	if (timer >= 2){//Vernietig jezelf en maak een explosie.

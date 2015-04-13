@@ -122,7 +122,7 @@ void GameInfo::draw(){
 	}
 	for(int i=0; i<keySprites.size();i++){
 		if(keys.at(i)){
-			keySprites.at(i).setPosition(visual->getViewPosition().x + visual->getSize().x/2+100*i,visual->getViewPosition().y+3.0f);
+			keySprites.at(i).setPosition(visual->getViewPosition().x + visual->getSize().x/1.5+100*i,visual->getViewPosition().y+3.0f);
 			visual->registerDraw(&keySprites.at(i), 2);
 		}
 	}

@@ -1,4 +1,4 @@
-﻿Build started 4/13/2015 2:08:28 PM.
+﻿Build started 4/13/2015 6:03:55 PM.
      1>Project "B:\Game\Project1\Project1.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "4.0".
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (entry point):
@@ -374,6 +374,9 @@
          	B:\Game\Project1\Debug\link.8004-cvtres.write.1.tlog
          	B:\Game\Project1\Debug\link.8004-rc.write.1.tlog
          	B:\Game\Project1\Debug\link.8004.write.1.tlog
+         	B:\Game\Project1\Debug\link.8188-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.8188-rc.write.1.tlog
+         	B:\Game\Project1\Debug\link.8188.write.1.tlog
          	B:\Game\Project1\Debug\link.8684-cvtres.write.1.tlog
          	B:\Game\Project1\Debug\link.8684-rc.write.1.tlog
          	B:\Game\Project1\Debug\link.8684.write.1.tlog
@@ -388,6 +391,7 @@
          	B:\Game\Project1\Debug\link.6684-cvtres.write.1.tlog
          	B:\Game\Project1\Debug\link.6816-cvtres.write.1.tlog
          	B:\Game\Project1\Debug\link.8004-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.8188-cvtres.write.1.tlog
          	B:\Game\Project1\Debug\link.8684-cvtres.write.1.tlog
          	B:\Game\Project1\Debug\link.8812-cvtres.write.1.tlog
          	B:\Game\Project1\Debug\link.9380-cvtres.write.1.tlog
@@ -407,6 +411,9 @@
          	B:\Game\Project1\Debug\link.8004-cvtres.read.1.tlog
          	B:\Game\Project1\Debug\link.8004-rc.read.1.tlog
          	B:\Game\Project1\Debug\link.8004.read.1.tlog
+         	B:\Game\Project1\Debug\link.8188-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.8188-rc.read.1.tlog
+         	B:\Game\Project1\Debug\link.8188.read.1.tlog
          	B:\Game\Project1\Debug\link.8684-cvtres.read.1.tlog
          	B:\Game\Project1\Debug\link.8684-rc.read.1.tlog
          	B:\Game\Project1\Debug\link.8684.read.1.tlog
@@ -421,6 +428,7 @@
          	B:\Game\Project1\Debug\link.6684-cvtres.read.1.tlog
          	B:\Game\Project1\Debug\link.6816-cvtres.read.1.tlog
          	B:\Game\Project1\Debug\link.8004-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.8188-cvtres.read.1.tlog
          	B:\Game\Project1\Debug\link.8684-cvtres.read.1.tlog
          	B:\Game\Project1\Debug\link.8812-cvtres.read.1.tlog
          	B:\Game\Project1\Debug\link.9380-cvtres.read.1.tlog
@@ -551,4 +559,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.18
+Time Elapsed 00:00:00.11
