@@ -1,0 +1,1 @@
+./Debug/actor.o ./Debug/main.o ./Debug/object.o ./Debug/ObjectManager.o ./Debug/renderer.o   

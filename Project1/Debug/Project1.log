@@ -1,0 +1,554 @@
+﻿Build started 4/13/2015 2:08:28 PM.
+     1>Project "B:\Game\Project1\Project1.vcxproj" on node 2 (Build target(s)).
+     1>Building with tools version "4.0".
+     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (entry point):
+       Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+       Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+       Using "Message" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Message"
+         Configuration=Debug
+       Done executing task "Message".
+       Task "Message"
+         Platform=Win32
+       Done executing task "Message".
+       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('B:\Game\Debug\' != '' and !HasTrailingSlash('B:\Game\Debug\')).
+       Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
+       Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('Debug\' != '' and !HasTrailingSlash('Debug\')).
+     1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "Project1.vcxproj".
+     1>Target "_PrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.BuildSteps.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "Build" depends on it):
+       Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
+     1>Done building target "_PrepareForBuild" in project "Project1.vcxproj".
+     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveReferences" depends on it):
+       Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+     1>Done building target "_PrepareForReferenceResolution" in project "Project1.vcxproj".
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;renderer.cpp;ScoreBoard.cpp'!='' and 'false'=='true' and '' != 'false').
+     1>Target "BeforeResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveReferences" depends on it):
+     1>Done building target "BeforeResolveReferences" in project "Project1.vcxproj".
+     1>Target "AssignProjectConfiguration" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveReferences" depends on it):
+       Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignProjectConfiguration"
+       Done executing task "AssignProjectConfiguration".
+     1>Done building target "AssignProjectConfiguration" in project "Project1.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+     1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveProjectReferences" depends on it):
+       Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
+     1>Done building target "_SplitProjectReferencesByFileExistence" in project "Project1.vcxproj".
+       Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+     1>Target "ResolveProjectReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveReferences" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '11.0' != '10.0' and '' != '').
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '11.0' == '10.0' and '' != '').
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
+       Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
+     1>Done building target "ResolveProjectReferences" in project "Project1.vcxproj".
+       Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+     1>Target "GetFrameworkPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Done building target "GetFrameworkPaths" in project "Project1.vcxproj".
+       Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
+     1>Target "GetReferenceAssemblyPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('' != '' and ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '' or 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '')).
+     1>Done building target "GetReferenceAssemblyPaths" in project "Project1.vcxproj".
+     1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "PrepareForBuild" depends on it):
+       Using "SetEnv" task from assembly "Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "SetEnv"
+         PATH=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.0\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files (x86)\Microsoft Visual Studio 11.0\;C:\Windows\SysWow64;;C:\Users\Chris\AppData\Local\Microsoft\WDExpress\11.0\Extensions\5kmagnn4.pit\NativeBinaries/x86;;C:\Program Files (x86)\Skype\Phone\;B:\Java\jdk\bin;F:\CMake\bin;F:\Git\bin;F:\android-sdk-windows\tools;F:\android_ndk_32\android-ndk-r10d;F:\mingw\mingw32\bin;F:\android-sdk-windows\platform-tools;F:\apache-ant-1.9.4\bin;
+       Done executing task "SetEnv".
+       Task "SetEnv" skipped, due to false condition; ('$(_IsNativeEnvironment)' == 'true') was evaluated as ('' == 'true').
+       Task "SetEnv"
+         LIB=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\lib;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\atlmfc\lib;C:\Program Files (x86)\Windows Kits\8.0\lib\win8\um\x86;;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         LIBPATH=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\atlmfc\lib;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\lib
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\atlmfc\include;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;C:\Program Files (x86)\Windows Kits\8.0\Include\winrt;;
+       Done executing task "SetEnv".
+     1>Done building target "SetBuildDefaultEnvironmentVariables" in project "Project1.vcxproj".
+       Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '') was evaluated as ('' != '').
+     1>Target "GetResolvedWinMD" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Done building target "GetResolvedWinMD" in project "Project1.vcxproj".
+     1>Target "PlatformPrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.Platform.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "PrepareForBuild" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as (''!='true' and 'true' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(ToolsetTargetsFound)' != 'true' and '$(PlatformToolset)' == 'v100') was evaluated as (''!='true' and 'true' != 'true' and 'v110' == 'v100').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(ToolsetTargetsFound)' != 'true' and '$(PlatformToolset)' == 'v90') was evaluated as (''!='true' and 'true' != 'true' and 'v110' == 'v90').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(ToolsetTargetsFound)' != 'true' and '$(PlatformToolset)' != 'v90' and '$(PlatformToolset)' != 'v100') was evaluated as (''!='true' and 'true' != 'true' and 'v110' != 'v90' and 'v110' != 'v100').
+     1>Done building target "PlatformPrepareForBuild" in project "Project1.vcxproj".
+       Target "GetFrameworkPaths" skipped. Previously built successfully.
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+     1>Target "PrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as (''!='true' and 'true' != 'true').
+       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MakeDir"
+       Done executing task "MakeDir".
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsAppContainer)'=='true' and '$(ConfigurationType)'!='Application' and '$(ConfigurationType)'!='DynamicLibrary' and '$(ConfigurationType)'!='StaticLibrary') was evaluated as (''!='true' and 'false'=='true' and 'Application'!='Application' and 'Application'!='DynamicLibrary' and 'Application'!='StaticLibrary').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCInstallDir)'=='' and '$(UseEnv)' != 'true' and ($(TargetFrameworkVersion)=='v3.5' or $(TargetFrameworkVersion)=='v3.0' or $(TargetFrameworkVersion)=='v2.0' )) was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\'=='' and '' != 'true' and (v4.0=='v3.5' or v4.0=='v3.0' or v4.0=='v2.0' )).
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCInstallDir)'=='' and '$(UseEnv)' != 'true' and '$(PlatformToolset)'=='v90') was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\'=='' and '' != 'true' and 'v110'=='v90').
+       Task "VCMessage" skipped, due to false condition; ('$(VCInstallDir)'=='' and '$(UseEnv)' != 'true') was evaluated as ('C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\'=='' and '' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(WindowsSDKDir)'=='' and '$(UseEnv)' != 'true') was evaluated as ('C:\Program Files (x86)\Windows Kits\8.0\'=='' and '' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(IntDirTrailingSlashWarning)'=='true') was evaluated as (''=='true').
+       Task "VCMessage" skipped, due to false condition; ('$(OutDirTrailingSlashWarning)'=='true') was evaluated as (''=='true').
+       Task "VCMessage" skipped, due to false condition; ('%(CompatibilityIssues.Identity)' != '' and '$(DesignTimeBuild)'!='true') was evaluated as ('' != '' and ''!='true').
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "PrepareForBuild" in project "Project1.vcxproj".
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;renderer.cpp;ScoreBoard.cpp'!='' and 'false'=='true' and '' != 'false').
+     1>Target "GetInstalledSDKLocations" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveSDKReferences" depends on it):
+       Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
+     1>Done building target "GetInstalledSDKLocations" in project "Project1.vcxproj".
+     1>Target "ResolveSDKReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
+     1>Done building target "ResolveSDKReferences" in project "Project1.vcxproj".
+       Target "ResolveSDKReferences" skipped. Previously built successfully.
+     1>Target "ExpandSDKReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
+     1>Done building target "ExpandSDKReferences" in project "Project1.vcxproj".
+     1>Target "ResolveAssemblyReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveReferences" depends on it):
+       Task "ResolveAssemblyReference" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
+     1>Done building target "ResolveAssemblyReferences" in project "Project1.vcxproj".
+       Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+     1>Target "AfterResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveReferences" depends on it):
+     1>Done building target "AfterResolveReferences" in project "Project1.vcxproj".
+       Target "ImplicitlyExpandDesignTimeFacades" skipped, due to false condition; ('$(ImplicitlyExpandDesignTimeFacades)' == 'true') was evaluated as ('' == 'true').
+     1>Target "ResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "Build" depends on it):
+     1>Done building target "ResolveReferences" in project "Project1.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "PrepareForBuild" skipped. Previously built successfully.
+     1>Target "InitializeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "Build" depends on it):
+       Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "ReadLinesFromFile"
+       Done executing task "ReadLinesFromFile".
+       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+       Using "Touch" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Touch"
+         Creating "Debug\BombDUde.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       Done executing task "Touch".
+     1>Done building target "InitializeBuildStatus" in project "Project1.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+     1>Target "BuildGenerateSourcesTraverse" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "BuildGenerateSources" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != '' and '' == 'true').
+     1>Done building target "BuildGenerateSourcesTraverse" in project "Project1.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "BeforeBuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.BuildSteps.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "BeforeBuildGenerateSources" in project "Project1.vcxproj".
+     1>Target "PreBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PreBuildEvent" in project "Project1.vcxproj".
+       Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
+       Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+       Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
+     1>Target "_Xsd" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "_Xsd" in project "Project1.vcxproj".
+     1>Target "MakeDirsForMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Midl" depends on it):
+       Task "Makedir"
+       Done executing task "Makedir".
+     1>Done building target "MakeDirsForMidl" in project "Project1.vcxproj".
+       Target "Midl" skipped, due to false condition; ('@(Midl)' != '') was evaluated as ('' != '').
+       Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
+       Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+     1>Target "ComputeMIDLGeneratedCompileInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Midl" depends on it):
+     1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "Project1.vcxproj".
+     1>Target "AfterMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Midl" depends on it):
+     1>Done building target "AfterMidl" in project "Project1.vcxproj".
+     1>Target "_Midl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "_Midl" in project "Project1.vcxproj".
+     1>Target "AfterBuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.BuildSteps.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "AfterBuildGenerateSources" in project "Project1.vcxproj".
+     1>Target "AfterBuildGenerateSourcesEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "AfterBuildGenerateSourcesEvent" in project "Project1.vcxproj".
+     1>Target "_BuildGenerateSourcesAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "BuildGenerateSources" depends on it):
+     1>Done building target "_BuildGenerateSourcesAction" in project "Project1.vcxproj".
+     1>Target "BuildGenerateSources" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildGenerateSources" in project "Project1.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+     1>Target "BuildCompileTraverse" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "BuildCompile" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
+     1>Done building target "BuildCompileTraverse" in project "Project1.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "BeforeClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "BeforeClCompile" in project "Project1.vcxproj".
+       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+     1>Target "ComputeCLInputPDBName" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "ComputeCLInputPDBName" in project "Project1.vcxproj".
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "ComputeReferenceCLInput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ClCompile" depends on it):
+       Task "WriteLinesToFile" skipped, due to false condition; (('@(_ReferenceCopyLocalPaths)'!='') and '$(DesignTimeBuild)' != 'true') was evaluated as ((''!='') and '' != 'true').
+       Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+     1>Done building target "ComputeReferenceCLInput" in project "Project1.vcxproj".
+     1>Target "MakeDirsForCl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ClCompile" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForCl" in project "Project1.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
+       Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '') was evaluated as ('' != '').
+     1>Target "_SelectedFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "SelectClCompile" depends on it):
+     1>Done building target "_SelectedFiles" in project "Project1.vcxproj".
+       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+       Target "ComputeCLInputPDBName" skipped. Previously built successfully.
+       Target "ComputeReferenceCLInput" skipped. Previously built successfully.
+       Target "_SelectedFiles" skipped. Previously built successfully.
+     1>Target "SelectCustomBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "SelectClCompile" depends on it):
+     1>Done building target "SelectCustomBuild" in project "Project1.vcxproj".
+     1>Target "SelectClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ClCompile" depends on it):
+     1>Done building target "SelectClCompile" in project "Project1.vcxproj".
+       Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
+       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;renderer.cpp;ScoreBoard.cpp' != '' and 'false' == 'True').
+     1>Target "ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ClCompile" depends on it):
+       Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'OldStyle' and 'Debug\vc110.pdb' != '' and !Exists(Debug\vc110.pdb)).
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('NotUsing' == 'Create' and ''!='true' and '' == '').
+       Using "CL" task from assembly "Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "CL"
+         Using cached input dependency table built from:
+         	B:\Game\Project1\Debug\cl.read.1.tlog
+         Outputs for B:\GAME\PROJECT1\ACTOR.CPP|B:\GAME\PROJECT1\ANIMATION.CPP|B:\GAME\PROJECT1\BLOCK.CPP|B:\GAME\PROJECT1\BLOCK2.CPP|B:\GAME\PROJECT1\BOMB1.CPP|B:\GAME\PROJECT1\BOMB2.CPP|B:\GAME\PROJECT1\BOMBCONTAINER.CPP|B:\GAME\PROJECT1\CONTACTLISTENER.CPP|B:\GAME\PROJECT1\CORPSE.CPP|B:\GAME\PROJECT1\ENEMY1.CPP|B:\GAME\PROJECT1\EXITBUTTON.CPP|B:\GAME\PROJECT1\EXPLOSION.CPP|B:\GAME\PROJECT1\FLOOR.CPP|B:\GAME\PROJECT1\GAME.CPP|B:\GAME\PROJECT1\GAMEINFORMATION.CPP|B:\GAME\PROJECT1\GAMESTATS.CPP|B:\GAME\PROJECT1\INIREADER.CPP|B:\GAME\PROJECT1\ITEMCRATE.CPP|B:\GAME\PROJECT1\ITEMLIFE.CPP|B:\GAME\PROJECT1\ITEMPOINTS.CPP|B:\GAME\PROJECT1\KEY.CPP|B:\GAME\PROJECT1\LADDER.CPP|B:\GAME\PROJECT1\LIGHT.CPP|B:\GAME\PROJECT1\LIGHTSMANAGER.CPP|B:\GAME\PROJECT1\LOCK.CPP|B:\GAME\PROJECT1\MAIN.CPP|B:\GAME\PROJECT1\MAPLOADER.CPP|B:\GAME\PROJECT1\MATH.CPP|B:\GAME\PROJECT1\MENU.CPP|B:\GAME\PROJECT1\MENUITEM.CPP|B:\GAME\PROJECT1\MESSAGE.CPP|B:\GAME\PROJECT1\OBJECT.CPP|B:\GAME\PROJECT1\OBJECTMANAGER.CPP|B:\GAME\PROJECT1\PARTICLESBOMB.CPP|B:\GAME\PROJECT1\PARTICLESBOMBFIRE.CPP|B:\GAME\PROJECT1\PARTICLESYSTEM.CPP|B:\GAME\PROJECT1\PLAYBUTTON.CPP|B:\GAME\PROJECT1\RENDERER.CPP|B:\GAME\PROJECT1\SCOREBOARD.CPP:
+         	B:\GAME\PROJECT1\DEBUG\ACTOR.OBJ
+         	B:\GAME\PROJECT1\DEBUG\ANIMATION.OBJ
+         	B:\GAME\PROJECT1\DEBUG\BLOCK.OBJ
+         	B:\GAME\PROJECT1\DEBUG\BLOCK2.OBJ
+         	B:\GAME\PROJECT1\DEBUG\BOMB1.OBJ
+         	B:\GAME\PROJECT1\DEBUG\BOMB2.OBJ
+         	B:\GAME\PROJECT1\DEBUG\BOMBCONTAINER.OBJ
+         	B:\GAME\PROJECT1\DEBUG\CORPSE.OBJ
+         	B:\GAME\PROJECT1\DEBUG\ITEMCRATE.OBJ
+         	B:\GAME\PROJECT1\DEBUG\EXITBUTTON.OBJ
+         	B:\GAME\PROJECT1\DEBUG\ITEMLIFE.OBJ
+         	B:\GAME\PROJECT1\DEBUG\ITEMPOINTS.OBJ
+         	B:\GAME\PROJECT1\DEBUG\KEY.OBJ
+         	B:\GAME\PROJECT1\DEBUG\LADDER.OBJ
+         	B:\GAME\PROJECT1\DEBUG\LIGHT.OBJ
+         	B:\GAME\PROJECT1\DEBUG\LIGHTSMANAGER.OBJ
+         	B:\GAME\PROJECT1\DEBUG\LOCK.OBJ
+         	B:\GAME\PROJECT1\DEBUG\MESSAGE.OBJ
+         	B:\GAME\PROJECT1\DEBUG\PARTICLESBOMBFIRE.OBJ
+         	B:\GAME\PROJECT1\DEBUG\PLAYBUTTON.OBJ
+         	B:\GAME\PROJECT1\DEBUG\CONTACTLISTENER.OBJ
+         	B:\GAME\PROJECT1\DEBUG\ENEMY1.OBJ
+         	B:\GAME\PROJECT1\DEBUG\EXPLOSION.OBJ
+         	B:\GAME\PROJECT1\DEBUG\FLOOR.OBJ
+         	B:\GAME\PROJECT1\DEBUG\GAME.OBJ
+         	B:\GAME\PROJECT1\DEBUG\GAMEINFORMATION.OBJ
+         	B:\GAME\PROJECT1\DEBUG\GAMESTATS.OBJ
+         	B:\GAME\PROJECT1\DEBUG\INIREADER.OBJ
+         	B:\GAME\PROJECT1\DEBUG\MAIN.OBJ
+         	B:\GAME\PROJECT1\DEBUG\MAPLOADER.OBJ
+         	B:\GAME\PROJECT1\DEBUG\MATH.OBJ
+         	B:\GAME\PROJECT1\DEBUG\MENU.OBJ
+         	B:\GAME\PROJECT1\DEBUG\MENUITEM.OBJ
+         	B:\GAME\PROJECT1\DEBUG\OBJECT.OBJ
+         	B:\GAME\PROJECT1\DEBUG\OBJECTMANAGER.OBJ
+         	B:\GAME\PROJECT1\DEBUG\PARTICLESBOMB.OBJ
+         	B:\GAME\PROJECT1\DEBUG\PARTICLESYSTEM.OBJ
+         	B:\GAME\PROJECT1\DEBUG\RENDERER.OBJ
+         	B:\GAME\PROJECT1\DEBUG\SCOREBOARD.OBJ
+         All outputs are up-to-date.
+       Done executing task "CL".
+     1>Done building target "ClCompile" in project "Project1.vcxproj".
+       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;renderer.cpp;ScoreBoard.cpp' != '' and 'false' == 'True').
+     1>Target "AfterClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "AfterClCompile" in project "Project1.vcxproj".
+     1>Target "_ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "_ClCompile" in project "Project1.vcxproj".
+       Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
+     1>Target "BeforeResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Done building target "BeforeResourceCompile" in project "Project1.vcxproj".
+     1>Target "MakeDirsForResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ResourceCompile" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForResourceCompile" in project "Project1.vcxproj".
+       Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
+     1>Target "AfterResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Done building target "AfterResourceCompile" in project "Project1.vcxproj".
+     1>Target "_ResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "_ResourceCompile" in project "Project1.vcxproj".
+       Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
+       Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
+     1>Target "AfterBuildCompileEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "AfterBuildCompileEvent" in project "Project1.vcxproj".
+     1>Target "_BuildCompileAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "BuildCompile" depends on it):
+     1>Done building target "_BuildCompileAction" in project "Project1.vcxproj".
+     1>Target "BuildCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildCompile" in project "Project1.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+     1>Target "BuildLinkTraverse" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "BuildLink" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
+     1>Done building target "BuildLinkTraverse" in project "Project1.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(RevertManifestEmbedding)' == 'true' and '$(_LegacyManifestEmbeddingDebug)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
+     1>Done building target "ComputeLegacyManifestEmbedding" in project "Project1.vcxproj".
+     1>Target "BeforeLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+     1>Done building target "BeforeLink" in project "Project1.vcxproj".
+     1>Target "ComputeRCOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
+     1>Done building target "ComputeRCOutputs" in project "Project1.vcxproj".
+     1>Target "ComputeRCGeneratedLinkInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeRCGeneratedLinkInputs" in project "Project1.vcxproj".
+     1>Target "ComputeManifestGeneratedLinkerInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "Project1.vcxproj".
+     1>Target "ComputeCustomBuildOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+       Task "CreateItem" skipped, due to false condition; ('%(CustomBuildDirsToMake.OutputFileToTool)'!='') was evaluated as (''!='').
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "ComputeCustomBuildOutput" in project "Project1.vcxproj".
+       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+       Target "ComputeCLInputPDBName" skipped. Previously built successfully.
+       Target "ComputeReferenceCLInput" skipped. Previously built successfully.
+     1>Target "ComputeCLOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
+     1>Done building target "ComputeCLOutputs" in project "Project1.vcxproj".
+     1>Target "ComputeCLGeneratedLinkInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeCLGeneratedLinkInputs" in project "Project1.vcxproj".
+     1>Target "ComputeLinkInputsFromProject" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeLinkInputsFromProject" in project "Project1.vcxproj".
+       Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
+     1>Target "ComputeManifestInputsTargets" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeManifestInputsTargets" in project "Project1.vcxproj".
+       Target "ManifestResourceCompile" skipped, due to false condition; ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '') was evaluated as ('LINK' == 'LINK' and '' != '').
+       Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
+     1>Target "AssignTargetPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "PrepareResourceNames" depends on it):
+       Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
+     1>Done building target "AssignTargetPaths" in project "Project1.vcxproj".
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+     1>Target "SplitResourcesByCulture" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "PrepareResourceNames" depends on it):
+       Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+       Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignCulture"
+       Done executing task "AssignCulture".
+     1>Done building target "SplitResourcesByCulture" in project "Project1.vcxproj".
+       Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
+     1>Target "CreateCustomManifestResourceNames" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "PrepareResourceNames" depends on it):
+     1>Done building target "CreateCustomManifestResourceNames" in project "Project1.vcxproj".
+     1>Target "PrepareResourceNames" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+     1>Done building target "PrepareResourceNames" in project "Project1.vcxproj".
+     1>Target "MakeDirsForLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForLink" in project "Project1.vcxproj".
+     1>Target "DoLinkOutputFilesMatch" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('B:\Game\Debug\BombDUde.exe' == '').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('B:\Game\Debug\BombDUde.exe' != '' and 'B:\Game\Debug\BombDUde.exe' != 'B:\Game\Debug\BombDUde.exe').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('B:\Game\Debug\BombDUde.exe' != '' and '.exe' != '.exe').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('B:\Game\Debug\BombDUde.exe' != '' and 'BombDUde' != 'BombDUde').
+     1>Done building target "DoLinkOutputFilesMatch" in project "Project1.vcxproj".
+     1>Target "PreLinkEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PreLinkEvent" in project "Project1.vcxproj".
+     1>Target "ComputeLinkSwitches" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "Link" depends on it):
+     1>Done building target "ComputeLinkSwitches" in project "Project1.vcxproj".
+     1>Target "Link" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+       Using "Link" task from assembly "Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Link"
+         Using cached output dependency table built from:
+         	B:\Game\Project1\Debug\link.write.1.tlog
+         	B:\Game\Project1\Debug\link.10044-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.10044-rc.write.1.tlog
+         	B:\Game\Project1\Debug\link.10044.write.1.tlog
+         	B:\Game\Project1\Debug\link.6684-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.6684-rc.write.1.tlog
+         	B:\Game\Project1\Debug\link.6684.write.1.tlog
+         	B:\Game\Project1\Debug\link.6816-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.6816-rc.write.1.tlog
+         	B:\Game\Project1\Debug\link.6816.write.1.tlog
+         	B:\Game\Project1\Debug\link.8004-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.8004-rc.write.1.tlog
+         	B:\Game\Project1\Debug\link.8004.write.1.tlog
+         	B:\Game\Project1\Debug\link.8684-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.8684-rc.write.1.tlog
+         	B:\Game\Project1\Debug\link.8684.write.1.tlog
+         	B:\Game\Project1\Debug\link.8812-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.8812-rc.write.1.tlog
+         	B:\Game\Project1\Debug\link.8812.write.1.tlog
+         	B:\Game\Project1\Debug\link.9380-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.9380-rc.write.1.tlog
+         	B:\Game\Project1\Debug\link.9380.write.1.tlog
+         	B:\Game\Project1\Debug\link-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.10044-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.6684-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.6816-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.8004-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.8684-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.8812-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link.9380-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link-rc.write.1.tlog
+         Using cached input dependency table built from:
+         	B:\Game\Project1\Debug\link.read.1.tlog
+         	B:\Game\Project1\Debug\link.10044-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.10044-rc.read.1.tlog
+         	B:\Game\Project1\Debug\link.10044.read.1.tlog
+         	B:\Game\Project1\Debug\link.6684-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.6684-rc.read.1.tlog
+         	B:\Game\Project1\Debug\link.6684.read.1.tlog
+         	B:\Game\Project1\Debug\link.6816-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.6816-rc.read.1.tlog
+         	B:\Game\Project1\Debug\link.6816.read.1.tlog
+         	B:\Game\Project1\Debug\link.8004-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.8004-rc.read.1.tlog
+         	B:\Game\Project1\Debug\link.8004.read.1.tlog
+         	B:\Game\Project1\Debug\link.8684-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.8684-rc.read.1.tlog
+         	B:\Game\Project1\Debug\link.8684.read.1.tlog
+         	B:\Game\Project1\Debug\link.8812-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.8812-rc.read.1.tlog
+         	B:\Game\Project1\Debug\link.8812.read.1.tlog
+         	B:\Game\Project1\Debug\link.9380-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.9380-rc.read.1.tlog
+         	B:\Game\Project1\Debug\link.9380.read.1.tlog
+         	B:\Game\Project1\Debug\link-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.10044-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.6684-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.6816-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.8004-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.8684-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.8812-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link.9380-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link-rc.read.1.tlog
+         Outputs for B:\GAME\PROJECT1\DEBUG\ACTOR.OBJ|B:\GAME\PROJECT1\DEBUG\ANIMATION.OBJ|B:\GAME\PROJECT1\DEBUG\BLOCK.OBJ|B:\GAME\PROJECT1\DEBUG\BLOCK2.OBJ|B:\GAME\PROJECT1\DEBUG\BOMB1.OBJ|B:\GAME\PROJECT1\DEBUG\BOMB2.OBJ|B:\GAME\PROJECT1\DEBUG\BOMBCONTAINER.OBJ|B:\GAME\PROJECT1\DEBUG\CONTACTLISTENER.OBJ|B:\GAME\PROJECT1\DEBUG\CORPSE.OBJ|B:\GAME\PROJECT1\DEBUG\ENEMY1.OBJ|B:\GAME\PROJECT1\DEBUG\EXITBUTTON.OBJ|B:\GAME\PROJECT1\DEBUG\EXPLOSION.OBJ|B:\GAME\PROJECT1\DEBUG\FLOOR.OBJ|B:\GAME\PROJECT1\DEBUG\GAME.OBJ|B:\GAME\PROJECT1\DEBUG\GAMEINFORMATION.OBJ|B:\GAME\PROJECT1\DEBUG\GAMESTATS.OBJ|B:\GAME\PROJECT1\DEBUG\INIREADER.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMCRATE.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMLIFE.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMPOINTS.OBJ|B:\GAME\PROJECT1\DEBUG\KEY.OBJ|B:\GAME\PROJECT1\DEBUG\LADDER.OBJ|B:\GAME\PROJECT1\DEBUG\LIGHT.OBJ|B:\GAME\PROJECT1\DEBUG\LIGHTSMANAGER.OBJ|B:\GAME\PROJECT1\DEBUG\LOCK.OBJ|B:\GAME\PROJECT1\DEBUG\MAIN.OBJ|B:\GAME\PROJECT1\DEBUG\MAPLOADER.OBJ|B:\GAME\PROJECT1\DEBUG\MATH.OBJ|B:\GAME\PROJECT1\DEBUG\MENU.OBJ|B:\GAME\PROJECT1\DEBUG\MENUITEM.OBJ|B:\GAME\PROJECT1\DEBUG\MESSAGE.OBJ|B:\GAME\PROJECT1\DEBUG\OBJECT.OBJ|B:\GAME\PROJECT1\DEBUG\OBJECTMANAGER.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESBOMB.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESBOMBFIRE.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESYSTEM.OBJ|B:\GAME\PROJECT1\DEBUG\PLAYBUTTON.OBJ|B:\GAME\PROJECT1\DEBUG\RENDERER.OBJ|B:\GAME\PROJECT1\DEBUG\SCOREBOARD.OBJ:
+         	B:\GAME\DEBUG\BOMBDUDE.ILK
+         	B:\GAME\DEBUG\BOMBDUDE.EXE
+         	B:\GAME\DEBUG\BOMBDUDE.PDB
+         All outputs are up-to-date.
+       Done executing task "Link".
+       Task "Message"
+         Project1.vcxproj -> B:\Game\Debug\BombDUde.exe
+       Done executing task "Message".
+     1>Done building target "Link" in project "Project1.vcxproj".
+       Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
+       Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false') was evaluated as ('false'!='' and 'false'!='false').
+       Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
+       Target "ComputeLinkImportLibraryOutputsForClean" skipped, due to false condition; ('$(LinkSkippedExecution)' != 'true') was evaluated as ('True' != 'true').
+     1>Target "AfterLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
+     1>Done building target "AfterLink" in project "Project1.vcxproj".
+     1>Target "_Link" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_Link" in project "Project1.vcxproj".
+     1>Target "_ALink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_ALink" in project "Project1.vcxproj".
+       Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
+     1>Target "_Manifest" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
+     1>Done building target "_Manifest" in project "Project1.vcxproj".
+       Target "RegisterOutput" skipped, due to false condition; ('$(EmbedManifest)'=='true' and '$(LinkSkippedExecution)' != 'true' and ('$(_IsNativeEnvironment)' == 'true' or '$(Platform)' == 'Win32')) was evaluated as ('true'=='true' and 'True' != 'true' and ('' == 'true' or 'Win32' == 'Win32')).
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_XdcMake" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
+     1>Done building target "ResolvedXDCMake" in project "Project1.vcxproj".
+     1>Target "ComputeCLCompileGeneratedXDCFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_XdcMake" depends on it):
+     1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "Project1.vcxproj".
+     1>Target "MakeDirsForXdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_XdcMake" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForXdcMake" in project "Project1.vcxproj".
+       Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
+     1>Target "_XdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_XdcMake" in project "Project1.vcxproj".
+     1>Target "ComputeCLCompileGeneratedSbrFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BscMake" depends on it):
+     1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "Project1.vcxproj".
+     1>Target "MakeDirsForBscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BscMake" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForBscMake" in project "Project1.vcxproj".
+       Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
+       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
+     1>Target "_BscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_BscMake" in project "Project1.vcxproj".
+       Target "RunMergeNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
+       Target "RunNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
+     1>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
+       Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+       Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+     1>Done building target "_GenerateSatelliteAssemblyInputs" in project "Project1.vcxproj".
+       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
+       Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
+     1>Target "CreateSatelliteAssemblies" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "CreateSatelliteAssemblies" in project "Project1.vcxproj".
+     1>Target "_Appverifier" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_Appverifier" in project "Project1.vcxproj".
+     1>Target "_Deploy" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_Deploy" in project "Project1.vcxproj".
+       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
+       Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+     1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+     1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "Project1.vcxproj".
+     1>Target "GetCopyToOutputDirectoryItems" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+     1>Done building target "GetCopyToOutputDirectoryItems" in project "Project1.vcxproj".
+       Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
+       Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
+     1>Target "_CopySourceItemsToOutputDirectory" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Done building target "_CopySourceItemsToOutputDirectory" in project "Project1.vcxproj".
+       Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
+       Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
+     1>Target "_CheckForCompileOutputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Done building target "_CheckForCompileOutputs" in project "Project1.vcxproj".
+       Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+     1>Target "CopyFilesToOutputDirectory" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "PrepareForRun" depends on it):
+       Task "Copy" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('true' == 'true' and 'true' != 'true').
+       Task "Message" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)'!='true') was evaluated as ('true' == 'true' and 'true'!='true').
+       Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
+       Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
+       Task "Copy" skipped, due to false condition; ('$(_DebugSymbolsProduced)'=='true' and '$(SkipCopyingSymbolsToOutputDirectory)' != 'true' and '$(CopyOutputSymbolsToOutputDirectory)'=='true') was evaluated as ('false'=='true' and '' != 'true' and 'true'=='true').
+       Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
+       Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
+       Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
+       Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
+       Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
+     1>Done building target "CopyFilesToOutputDirectory" in project "Project1.vcxproj".
+     1>Target "PrepareForRun" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "PrepareForRun" in project "Project1.vcxproj".
+       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
+     1>Target "PostBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PostBuildEvent" in project "Project1.vcxproj".
+     1>Target "_BuildLinkAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "BuildLink" depends on it):
+     1>Done building target "_BuildLinkAction" in project "Project1.vcxproj".
+     1>Target "BuildLink" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildLink" in project "Project1.vcxproj".
+     1>Target "AfterBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.BuildSteps.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "Build" depends on it):
+     1>Done building target "AfterBuild" in project "Project1.vcxproj".
+     1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "Build" depends on it):
+       Using "Delete" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Delete"
+         Deleting file "Debug\BombDUde.unsuccessfulbuild".
+       Done executing task "Delete".
+       Task "Touch"
+         Touching "Debug\BombDUde.lastbuildstate".
+       Done executing task "Touch".
+     1>Done building target "FinalizeBuildStatus" in project "Project1.vcxproj".
+     1>Target "Build" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.BuildSteps.Targets" from project "B:\Game\Project1\Project1.vcxproj" (entry point):
+     1>Done building target "Build" in project "Project1.vcxproj".
+     1>Done Building Project "B:\Game\Project1\Project1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.18

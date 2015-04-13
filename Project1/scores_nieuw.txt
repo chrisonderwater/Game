@@ -1,0 +1,10 @@
+[chris]
+score = 1100
+[Kees]
+score = 1000
+[jaap]
+score = 500
+[lol]
+score = 11
+[Jaap]
+score = 10

@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A7ABE659-D308-4213-8CB2-913ABC42FB94}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <ProjectName>BombDUde</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
+    <PlatformToolset>arm-linux-androideabi-4.9</PlatformToolset>
+    <AndroidStlType>gnustl_static</AndroidStlType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <IncludePath>F:\android_ndk_32\android-ndk-r10d\sources\sfml\include;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\android_ndk_32\android-ndk-r10d\sources\sfml\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>B:\Game\Project1\libs\Box2D_v2.3.0\Box2D;$(ProjectDir)\libs\SFML-2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>B:\Game\Project1\libs\SFML-2.1\lib;B:\Game\Project1\libs\Box2D_v2.3.0\Box2D\Build\vs2012\bin\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-system-d.lib;sfml-window-d.lib;Box2D.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>F:\android_ndk_32\android-ndk-r10d\sources\box2d\Box2D;$(ProjectDir)\libs\box2d\include\;$(ProjectDir)\libs\SFML-2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalOptions>-std=c++11 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Chris\Downloads\Box2D_v2.3.0\Box2D_v2.3.0\Box2D\Build\vs2012\Android\Debug;F:\android_ndk_32\android-ndk-r10d\sources\box2d\lib\armeabi;F:\android_ndk_32\android-ndk-r10d\sources\sfml\lib\armeabi;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalOptions>-llibsfml-main -lsfml-main -lBox2D -lsfml-window -lsfml-graphics -lsfml-system -lsfml-audio -lsfml-activity  %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>
+      </LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Users\Chris\code\box2d\include\;C:\Users\Chris\code\SFML-2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\Chris\code\box2d\lib;C:\Users\Chris\code\SFML-2.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib; sfml-system.lib; sfml-window.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Users\Chris\code\box2d\include\;C:\Users\Chris\code\SFML-2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\Chris\code\box2d\lib;C:\Users\Chris\code\SFML-2.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib; sfml-system.lib; sfml-window.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="block.cpp" />
+    <ClCompile Include="Block2.cpp" />
+    <ClCompile Include="Bomb1.cpp" />
+    <ClCompile Include="Bomb2.cpp" />
+    <ClCompile Include="BombContainer.cpp" />
+    <ClCompile Include="Corpse.cpp" />
+    <ClCompile Include="ItemCrate.cpp" />
+    <ClCompile Include="ExitButton.cpp" />
+    <ClCompile Include="ItemLife.cpp" />
+    <ClCompile Include="ItemPoints.cpp" />
+    <ClCompile Include="Key.cpp" />
+    <ClCompile Include="Ladder.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="LightsManager.cpp" />
+    <ClCompile Include="lock.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="ParticlesBombfire.cpp" />
+    <ClCompile Include="PlayButton.cpp" />
+    <ClCompile Include="ContactListener.cpp" />
+    <ClCompile Include="Enemy1.cpp" />
+    <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="Floor.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameInformation.cpp" />
+    <ClCompile Include="GameStats.cpp" />
+    <ClCompile Include="INIReader.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MapLoader.cpp" />
+    <ClCompile Include="math.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuItem.cpp" />
+    <ClCompile Include="object.cpp" />
+    <ClCompile Include="ObjectManager.cpp" />
+    <ClCompile Include="ParticlesBomb.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="renderer.cpp" />
+    <ClCompile Include="ScoreBoard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="Block2.h" />
+    <ClInclude Include="Bomb1.h" />
+    <ClInclude Include="Bomb2.h" />
+    <ClInclude Include="BombContainer.h" />
+    <ClInclude Include="Corpse.h" />
+    <ClInclude Include="helperFunctions.h" />
+    <ClInclude Include="ItemCrate.h" />
+    <ClInclude Include="ExitButton.h" />
+    <ClInclude Include="ItemLife.h" />
+    <ClInclude Include="ItemPoints.h" />
+    <ClInclude Include="Key.h" />
+    <ClInclude Include="Ladder.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="LightsManager.h" />
+    <ClInclude Include="Lock.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="ParticlesBombfire.h" />
+    <ClInclude Include="PlayButton.h" />
+    <ClInclude Include="ContactListener.h" />
+    <ClInclude Include="Enemy1.h" />
+    <ClInclude Include="Explosion.h" />
+    <ClInclude Include="Floor.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameInfo.h" />
+    <ClInclude Include="GameStats.h" />
+    <ClInclude Include="INIReader.h" />
+    <ClInclude Include="MapLoader.h" />
+    <ClInclude Include="math.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MenuItem.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="ObjectManager.h" />
+    <ClInclude Include="ObjectNames.h" />
+    <ClInclude Include="ParticlesBomb.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScoreBoard.h" />
+    <ClInclude Include="selectColor.h" />
+    <ClInclude Include="Settings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="toDo.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

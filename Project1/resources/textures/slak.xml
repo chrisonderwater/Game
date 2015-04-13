@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<TextureAtlas imagePath="slak.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="slak0000" x="0" y="0" width="90" height="85"/>
+	<SubTexture name="slak0001" x="90" y="0" width="90" height="85"/>
+	<SubTexture name="slak0002" x="180" y="0" width="90" height="85"/>
+	<SubTexture name="slak0003" x="270" y="0" width="90" height="85"/>
+	<SubTexture name="slak0004" x="360" y="0" width="90" height="85"/>
+	<SubTexture name="slak0005" x="0" y="85" width="90" height="85"/>
+	<SubTexture name="slak0006" x="90" y="85" width="90" height="85"/>
+	<SubTexture name="slak0007" x="180" y="85" width="90" height="85"/>
+	<SubTexture name="slak0008" x="270" y="85" width="90" height="85"/>
+	<SubTexture name="slak0009" x="360" y="85" width="90" height="85"/>
+	<SubTexture name="slak0010" x="0" y="170" width="90" height="85"/>
+	<SubTexture name="slak0011" x="90" y="170" width="90" height="85"/>
+	<SubTexture name="slak0012" x="180" y="170" width="90" height="85"/>
+	<SubTexture name="slak0013" x="270" y="170" width="90" height="85"/>
+	<SubTexture name="slak0014" x="360" y="170" width="90" height="85"/>
+	<SubTexture name="slak0015" x="0" y="255" width="90" height="85"/>
+	<SubTexture name="slak0016" x="90" y="255" width="90" height="85"/>
+	<SubTexture name="slak0017" x="180" y="255" width="90" height="85"/>
+	<SubTexture name="slak0018" x="270" y="255" width="90" height="85"/>
+	<SubTexture name="slak0019" x="360" y="255" width="90" height="85"/>
+	<SubTexture name="slak0020" x="0" y="340" width="90" height="85"/>
+	<SubTexture name="slak0021" x="90" y="340" width="90" height="85"/>
+	<SubTexture name="slak0022" x="180" y="340" width="90" height="85"/>
+	<SubTexture name="slak0023" x="270" y="340" width="90" height="85"/>
+	<SubTexture name="slak0024" x="360" y="340" width="90" height="85"/>
+	<SubTexture name="slak0025" x="0" y="425" width="90" height="85"/>
+	<SubTexture name="slak0026" x="90" y="425" width="90" height="85"/>
+	<SubTexture name="slak0027" x="180" y="425" width="90" height="85"/>
+	<SubTexture name="slak0028" x="270" y="425" width="90" height="85"/>
+	<SubTexture name="slak0029" x="360" y="425" width="90" height="85"/>
+	<SubTexture name="slak0030" x="0" y="510" width="90" height="85"/>
+	<SubTexture name="slak0031" x="90" y="510" width="90" height="85"/>
+	<SubTexture name="slak0032" x="180" y="510" width="90" height="85"/>
+	<SubTexture name="slak0033" x="270" y="510" width="90" height="85"/>
+	<SubTexture name="slak0034" x="360" y="510" width="90" height="85"/>
+	<SubTexture name="slak0035" x="0" y="595" width="90" height="85"/>
+	<SubTexture name="slak0036" x="90" y="595" width="90" height="85"/>
+	<SubTexture name="slak0037" x="180" y="595" width="90" height="85"/>
+	<SubTexture name="slak0038" x="270" y="595" width="90" height="85"/>
+	<SubTexture name="slak0039" x="360" y="595" width="90" height="85"/>
+	<SubTexture name="slak0040" x="0" y="680" width="90" height="85"/>
+	<SubTexture name="slak0041" x="90" y="680" width="90" height="85"/>
+	<SubTexture name="slak0042" x="180" y="680" width="90" height="85"/>
+	<SubTexture name="slak0043" x="270" y="680" width="90" height="85"/>
+	<SubTexture name="slak0044" x="360" y="680" width="90" height="85"/>
+	<SubTexture name="slak0045" x="0" y="765" width="90" height="85"/>
+	<SubTexture name="slak0046" x="90" y="765" width="90" height="85"/>
+	<SubTexture name="slak0047" x="180" y="765" width="90" height="85"/>
+	<SubTexture name="slak0048" x="270" y="765" width="90" height="85"/>
+	<SubTexture name="slak0049" x="360" y="765" width="90" height="85"/>
+</TextureAtlas>
