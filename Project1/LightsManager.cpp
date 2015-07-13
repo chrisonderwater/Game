@@ -29,13 +29,15 @@ void LightsManager::update(){
 	float lightLength = 15;
 	b2Vec2 p1;
 	b2Vec2 p2;
-	vertices.resize( lights->size()*361*3 );
+	
 	b2Vec2 prevIntersectionPoint;
+	int stepCounter = 0;
 
+	vertices.clear();
 	for(int i=0; i<lights->size();i++){
 		prevIntersectionPoint = b2Vec2(lights->at(i).x, lights->at(i).y);
-		for(int j=0; j<=360; j+=stepSize){
-		  currentRayAngle = degreesToRadians(j);
+		for(int j=0; j<=lights->at(i).radius; j+=stepSize){
+		  currentRayAngle = degreesToRadians(j + lights->at(i).rotation);
 				  //set up input
 		  b2RayCastInput input;
 		  input.p1 = b2Vec2(lights->at(i).x,lights->at(i).y);
@@ -59,22 +61,31 @@ void LightsManager::update(){
 		  }
   
 		  b2Vec2 intersectionPoint = input.p1 + closestFraction * (input.p2 - input.p1);
-		  vertices[(i*1083)+ j*3].position = sf::Vector2f(input.p1.x*bs,input.p1.y*bs);
-		  vertices[(i*1083)+ j*3 + 1].position = sf::Vector2f(intersectionPoint.x*bs,intersectionPoint.y*bs);
-		  vertices[(i*1083)+ j*3 + 2].position = sf::Vector2f(prevIntersectionPoint.x*bs,prevIntersectionPoint.y*bs);
+
+		  sf::Vertex vertex1;
+		  sf::Vertex vertex2;
+		  sf::Vertex vertex3;
+
+		  vertex1.position = sf::Vector2f(input.p1.x*bs,input.p1.y*bs);
+		  vertex2.position = sf::Vector2f(intersectionPoint.x*bs,intersectionPoint.y*bs);
+		  vertex3.position = sf::Vector2f(prevIntersectionPoint.x*bs,prevIntersectionPoint.y*bs);
 
 		  sf::Color  color = lights->at(i).color;			
 
-		  vertices[(i*1080)+ j*3].color        = color;
-		  vertices[(i*1080)+ j*3 +1].color     = color ; //pointDistance(input.p1.x,input.p1.y, intersectionPoint.x,intersectionPoint.y) );
-		  vertices[(i*1080)+ j*3 +2].color     = color; //pointDistance(input.p1.x,input.p1.y, prevIntersectionPoint.x,prevIntersectionPoint.y) );
+		  vertex1.color    = color;
+		  vertex2.color    = color ; //pointDistance(input.p1.x,input.p1.y, intersectionPoint.x,intersectionPoint.y) );
+		  vertex3.color    = color; //pointDistance(input.p1.x,input.p1.y, prevIntersectionPoint.x,prevIntersectionPoint.y) );
 
+		  vertices.append(vertex1);
+		  vertices.append(vertex2);
+		  vertices.append(vertex3);
           /*
 		  vertices[(i*1080)+ j*3].color        = sf::Color(rand()%255,rand()%255,rand()%255, 80 );
 		  vertices[(i*1080)+ j*3 +1].color     = sf::Color(rand()%255,rand()%255,rand()%255,80) ; //pointDistance(input.p1.x,input.p1.y, intersectionPoint.x,intersectionPoint.y) );
 		  vertices[(i*1080)+ j*3 +2].color     = sf::Color(rand()%255,rand()%255,rand()%255,80); //pointDistance(input.p1.x,input.p1.y, prevIntersectionPoint.x,prevIntersectionPoint.y) );
 		  */
 		  prevIntersectionPoint = intersectionPoint;
+
 		}
 	}
 }

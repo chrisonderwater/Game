@@ -11,8 +11,13 @@ void Floor::initialize(float width, float height){
 	//Create Box2D shape. (Seems like something to handle for object.)
 	b2PolygonShape groundBox;
 	groundBox.SetAsBox(width/2, height/2);//Note: Both multiplied by 2. (100*20)
+	
+	b2FixtureDef fixtureDef;        //A polygon is just a part of a fixture ...
+	fixtureDef.shape = &groundBox;
+	fixtureDef.density = 2.0f;      // <- Now body will react to its environment.
+	fixtureDef.friction = 1.0f;
 	//And, of course: Bind the *fixture to the body. (* -- this is a shortcut, not a fixture but a shape.)
-	body->CreateFixture(&groundBox, 0.0f);
+	body->CreateFixture(&fixtureDef);
 }
 
 void Floor::update(float time){

@@ -1,0 +1,128 @@
+                          LARAX & ZACO  V1.8b
+                          -------------------
+                  (Zanobi software, all rights reserved)
+
+Stefano Zanobi,
+V. Gramsci 47   
+00015 Monterotondo (Roma)
+Italy.
+
+NOTE: This is a registered version of "Larax & Zaco", please
+      do not distribute!!!
+
+System requirements:
+VGA graphic or better,
+DOS version 3 or better,
+About 300 KB of base memory free,
+CPU 386 or better (486 recommended).
+
+This software is provided as is.
+THE AUTHOR DISCLAIMS ALL WARRANTIES RELATING TO THE USE OR MISUSE
+OF THIS SOFTWARE, WHETHER EXPRESSED OR IMPLIED.
+
+
+GAME CONFIGURATION
+------------------
+
+Just run config.exe, and choose what to configure.
+
+Note: this game only supports digital sounds through Sound Blaster (C).
+Unless a "blaster" environment variable is defined, you must know
+the correct port, irq and dma values for your soundcard.
+
+
+Game description & tips:
+------------------------
+
+You can play one or two players game; the game proceeds on different
+levels: you must collect a given number of certain bonuses and destroy
+a given percentage of the existing structures, strategically placing bombs of 
+different power, in order to complete each level. These objectives are
+shown in the central window under the playing screens.
+But this isn't easy: you must be very careful when placing bombs!
+'cause you could end up buried under boulders or destroy the objective-bonuses
+too, thus being forced to give up that level! Moreover, many mutant monster
+will chase you, draining off your energy.
+When your energy drops to zero you will loose a life, then you can
+choose to reenter the level (by pressing fire) or to restart that level
+from the beginning, waiting a few seconds.
+Anyway, you can't reenter a level if there aren't enough objective-bonuses
+to complete it.
+For every monster you destroy, you can earn one of the following
+special-bonuses:
+
+
+ -Present              :      2000 points.
+ -Hot dog              :      1500 points + 1/3 of your energy.
+ -First Aid            :      1000 points + all your energy.   
+ -Yellow bomb box      :      3000 points + normal set of bombs.  
+ -Green bomb box       :      1000 points + super set of bombs.
+ -Jolly cloud          :      2000 points + bonus rain.
+ -Digger box           :      1000 points + digger robots.  
+ -Big diamond          :      5000 points.
+ -Hourglass            :        10 time units. 
+ -Taxi                 :           Warp to next level.      
+ -Glue-bomb
+ -Shoes                :        50 points + more sprint while running. 
+
+Six types of bombs are available. Note that the most powerful one 
+(and the most dangerous for your health too) is not available when you 
+start a game, but you can gain it grabbing a green bomb box.
+"micro-bombs" are useful for killing monsters without destroying anything
+else, but they're quite weak.
+"Tele-bombs" can be placed (max.5) and will not explode until you use your
+remote-control (you can find it amongst your weapons, after you have placed 
+some tele-bomb).
+Digger robots will help you to clear the way, by eating all the small rocks
+they find.
+the "down" key, lets you climb down platforms and activate telepods, jumpers
+and other items.
+With f9 and f10 keys you can diplay a map real-time showing the situation,
+the explosions, etc.
+
+Deathmatch mode:
+----------------
+
+This option will start a two player game in a level designed for playing one
+against the other. These are some differences from "normal" play:
+
+- If one of the two characters dies, the other gains 50000 points. (So the
+  fastest way to raise your score is to destroy the other).
+- Falling from high places hurts your character.
+- Every bonus you take gives you a little energy.
+- When the "percentage of destruction" becomes too high, the level restarts.
+- Deathmatch ends when a player looses all his lives (Of course).
+- Highest score wins.
+
+Problems:
+---------
+
+This program has been intended to work in dos environment, but it should
+work correctly under different operative systems (I hope :)).
+If this is not the case, just run it in dos mode...
+If digital sound seems not to work, check if an expanded-memory manager is
+present when you run the game (it should), and check port, irq, dma values 
+in the configuration program.
+
+
+Game speed:
+-----------
+
+The program will automatically adapt itself to your system's speed, 
+(within a few seconds) but if your computer is too slow, 
+you can gain speed by:
+
+- Disabling background scenery (press f1 or f3).
+- Or decreasing the playing field width. (keys f6, f7).
+  (you can set this width only during one-player game).
+
+Of course, installing the game to the hard disk will speed up every i/o 
+operation.
+
+Any comment or suggestion are well accepted: contact me at my address,
+
+Enjoy your destructive mission!
+
+
+HINT: At level 1, hold pressed left and right keys together for about 10
+     seconds: you'll warp to level 7.

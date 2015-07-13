@@ -4,6 +4,7 @@
 #include <fstream>
 #include <cmath>
 #include "helperFunctions.h"
+#include "createType.h"
 
 MapLoader::MapLoader(ObjectManager * m){
 	manager = m;
@@ -35,45 +36,9 @@ bool MapLoader::load(std::string fileName){
 					parameter = std::stof(reader.elements.value.at(i).value.at(j));
 				}//if
 			}//for
-			createType(type,locationX + locationWidth/2,locationY + locationHeight/2, locationWidth, locationHeight, parameter );
+			createType(manager, type,locationX + locationWidth/2,locationY + locationHeight/2, locationWidth, locationHeight, parameter );
 		}//if
 	}//for
 	return 1;
 }//load
 
-//Switch that places objects in the map.
-void MapLoader::createType(const unsigned int type, const float x, const float y, const float width, const float height, const float parameter){
-
-	switch(type){
-		case 1:
-			manager->addActor(x,y);
-			break;
-		case 2:
-			manager->addBlock(x,y,width,height);
-			break;
-		case 3:
-			manager->addFloor(x,y,width,height);
-			break;
-		case 4:
-			manager->addBlock2(x,y,width,height);
-			break;
-		case 5:
-			manager->addEnemy1(x , y);
-			break;
-		case 6:
-			manager->addItemLife(x, y);
-			break;
-		case 7:
-			manager->addItemPoints(x,y, parameter);
-			break;
-		case 8:
-			manager->addLadder(x,y,width, height);
-			break;
-		case 9:
-			manager->addLock(x,y);
-			break;
-		case 10:
-			manager->addKey(x,y);
-			break;
-	}
-}

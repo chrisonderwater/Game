@@ -19,6 +19,7 @@
 #include "Lock.h"
 #include "Key.h"
 #include "Message.h"
+#include "RandomBuildingGenerator.h"
 
 #include "ObjectNames.h"
 #include "LightsManager.h"
@@ -33,6 +34,23 @@ ObjectManager::ObjectManager(Renderer * temp){
 	lightsManager->setLights( renderer->getLights() );
 }
 
+void ObjectManager::addRandomBuildingGenerator(float x, float y, float width, float height){
+	Object * temp = new RandomBuildingGenerator;
+	objects.push_back(temp);
+	objects.back()->setID( objects.size()-1 );
+
+	//Create Box2D body.
+	b2BodyDef bodyDef;
+	bodyDef.userData = temp;
+	bodyDef.type = b2_staticBody;                // <-- Important for dynamic objects!
+	bodyDef.position.Set(x, y);
+	temp->setBody( world->CreateBody(&bodyDef) );
+
+	//And initialize the object.
+	temp->setInterfaces(renderer, this, gameStats);
+	temp->initialize(width, height);
+
+}
 void ObjectManager::addBlock(float x, float y, float width, float height){
 	//Create the Actor.
 	Object * temp = new Block;

@@ -43,7 +43,7 @@ void Renderer::render(sf::RenderWindow &window){
 	if (isView)
 		window.setView(view);
 	else
-		window.setView(window.getDefaultView() );
+		window.setView(viewMenu );
 
 	// Draw the background.
 	window.draw(background);
@@ -60,6 +60,8 @@ void Renderer::render(sf::RenderWindow &window){
 	width = window.getSize().x;
 	height = window.getSize().y;
 	view.setSize(sf::Vector2f(width, height));
+	viewMenu.setSize(sf::Vector2f(width, height));
+	viewMenu.setCenter(sf::Vector2f(width/2,height/2));
 }
 
 //Zet de af te drukken drawable in de lijst. Priority is: 0 - 9. 9 Is top
@@ -149,9 +151,9 @@ sf::Vector2f Renderer::getViewPosition(){
 
 void Renderer::toggleView(){
 	if(isView)
-		isView = false;
-	else
-		isView = true;
+			isView = false;
+		else
+			isView = true;
 }
 
 bool Renderer::getMousePressed(){

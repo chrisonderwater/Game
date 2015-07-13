@@ -9,6 +9,7 @@ enum class ObjectName{
 	ACTOR,
 	BLOCK,
 	BLOCK2,
+	BLOCKLIGHT,
 	FLOOR,
 	BOMB1,
 	BOMB2,

@@ -8,11 +8,12 @@ ExitButton::ExitButton(Renderer* r, Game * g, sf::Vector2f pos) {
 	setPosition(pos.x, pos.y);
 	sprite.setTexture(*visual->getTexture("resources/textures/exitButton.png") );
 	sf::Vector2u s =  visual->getTexture("resources/textures/exitButton.png")->getSize();
+	sprite.setOrigin(s.x/2, s.y/2);
 	setSize(s.x/visual->getBlockSize(), s.y/visual->getBlockSize() );
 }
 
 void ExitButton::draw(){
-	visual->registerDraw(&sprite,0);
+	visual->registerDraw(&sprite,3);
 }
 
 void ExitButton::onPress(){

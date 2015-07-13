@@ -48,5 +48,6 @@ class Game {
 		void draw();
 		void render();
 		void changeState(GameState s);
+		void resizeRenderers(float width, float height);
 };
 #endif

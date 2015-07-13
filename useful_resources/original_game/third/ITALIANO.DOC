@@ -1,0 +1,145 @@
+                        LARAX & ZACO  V. 1.8b
+                        ---------------------
+
+               (Zanobi software, tutti i diritti riservati.)
+
+Zanobi Stefano
+v.Gramsci 47
+00015 Monterotondo (Roma)
+
+
+Nota: Questa Š una versione registrata di Larax & Zaco, siete pregati di
+non distribuirne copie.
+
+Requisiti di sistema :
+
+Scheda grafica VGA o superiore,
+DOS versione 3 o superiore,
+Circa 400 KB di memoria base liberi.
+Un processore 386 o superiore (Š caldamente raccomandato un 486).
+
+Stefano Zanobi,
+V. Gramsci 47   
+00015 Monterotondo (Roma)
+
+L'autore declina ogni responsabilit… circa l'uso o l'abuso del programma
+stesso.
+
+Configurazione del gioco:
+-------------------------
+
+Lanciare il programma config.exe, apparira' una lista di opzioni di gioco
+configurabili, tra cui i comandi da tastiera.
+
+Note: il gioco supporta solo sonoro digitale da schede Sound blaster.
+Scegliere le corrette porte, l'irq e il canale DMA e' strettamente necessario
+solo se non e' definita la variabile di sistema "blaster" che fornisce queste
+informazioni automaticamente.
+Se utilizzate il sonoro da sound blaster, il programma cerchera' di caricare
+alcuni degli effetti sonori nella memoria estesa, per risparmiare memoria
+base. In questo caso, quindi, un gestore di memoria estesa dovra' essere
+attivo in memoria quando lanciate il gioco.
+
+Descrizione del gioco e suggerimenti:
+--------------------------------------
+
+Si pu• giocare in uno o due giocatori contemporaneamente su due schermi,
+il gioco si sviluppa in diversi livelli: per terminare ogni livello 
+dovrete raccogliere un determinato numero di bonus di un certo tipo, 
+e far saltare in aria una percentuale minima, di volta in volta diversa,
+delle strutture presenti, utilizzando bombe di differente potenza piazzate
+strategicamente. Questi obiettivi sono indicati nel riquadro centrale sotto
+lo schermo di gioco. Tutto qui? ...No! occorre anche una tattica ben
+precisa nel piazzare le bombe, in quanto potreste causare crolli a catena e
+restare sepolti ingloriosamente sotto le macerie, oppure distruggere i 
+bonus-obiettivo non potendo pi— completare il quadro. 
+Inoltre, sarete ostacolati da mostri mutanti di varia natura, sempre ben 
+felici di dare una ripulita al livello di energia del vostro personaggio:
+quando (a causa dei mostri o di eventuali travi in testa) questo livello
+scende a zero, perderete una vita e potrete scegliere se rientrare in gioco
+(premendo il tasto "fuoco") o se riiniziare il livello da capo
+,attendendo una manciata di secondi. Ad ogni modo, non potrete rientrare
+in gioco se i bonus-obiettivo rimasti sullo schermo non sono pi— in numero
+sufficiente a completare il livello: in questo caso dovrete ripartire da capo.
+Per ogni mostro mutante che distruggerete, potrete guadagnare uno dei
+seguenti bonus-speciali:
+
+ -Regalo               :vale  2000 punti.
+ -Panino               :      1500 punti + 1/3 dell'energia.
+ -Pronto soccorso      :      1000 punti + tutta l'energia.   
+ -Cassa di bombe gialla:      3000 punti + rifornimento di bombe normali.  
+ -Cassa di bombe verde :      1000 punti + rifornimento di super bombe.
+ -Nuvola jolly         :      2000 punti + pioggia di bonus.
+ -Scatola di scavatori :      1000 punti + robot scavatori.
+ -Diamantone           :      5000 punti.
+ -Clessidra            :        10 scatti-tempo. 
+ -Taxi                 :      5000 punti + Passa al livello successivo
+ -Bomba-colla          : 
+ -Scarpe               :      50   punti + Migliorano la manovrabilit… 
+                                           del personaggio.   
+
+Ci sono bombe di cinque tipi, la pi— potente (e anche la pi— pericolosa
+per la vostra sopravvivenza), non Š immediatamente a vostra disposizione,
+ma la potete guadagnare se trovate una cassa di bombe verde.
+Le bombe telecomandate possono essere piazzate a piacere (fino a cinque)
+e poi fatte esplodere contemporaneamente a distanza con il telecomando.
+I robot scavatori aiutano a disseppellire i bonus o a liberare la strada
+mangiando tutti i piccoli sassi che incontrano.
+Il tasto "giu", oltre a farvi scendere dalle piattaforme, attiva i
+teletrasporti, i trampolini, e altri oggetti speciali.
+Con i tasti f9 e f10 si attivera', per il giocatore 1 e il giocatore 2
+rispettivamente, una mappa sovrapposta che mostrera' la situazione, le 
+esplosioni, i crolli, in tempo reale.
+
+Modalit… guerra:
+----------------
+
+Scegliendo questa opzione si gioca su un livello particolare, disegnato per
+giocare uno contro l'altro. Le differenze, rispetto al gioco normale sono
+queste:
+
+- Se uno dei due personaggi muore, l'altro guadagna 50000 punti. (Per cui,
+  il modo piu' rapido di fare punti Š cercare di eliminare l'altro).
+- Ogni bonus preso restituisce un po' di energia.
+- Quando la distruzione supera un certo limite, il livello ricomincia.
+- La partita finisce quando uno dei due termina le vite, o se si ricomincia
+  piu' di tre volte.
+- Vince chi ha totalizzato piu' punti.
+
+Problemi:
+---------
+
+Il gioco non e' stato testato approfonditamente, ecco alcuni suggerimenti
+utili:
+Il programma e' stato scritto per funzionare in ambiente dos, ma anche se 
+utilizzate Windows(C) dovrebbe girare correttamente.
+Se questo non accade, Š consigliabile creare un collegamento dos.
+Se il suono da Soundblaster(c) non funziona correttamente, accertatevi che
+sia presente un gestore di memoria estesa, e che i valori delle porte, irq
+e dma nella configurazione siano impostati correttamente.
+
+Se, giocando in due, la tastiera sembra funzionare male, provate a scegliere
+tasti diversi per comandare i personaggi, lanciando il programma config.exe.
+
+Velocit… del gioco:
+-------------------
+
+ Il programma, cercher… di adattarsi automaticamente alla velocit… del
+ vostro computer, ma se quest'ultimo Š troppo lento, per guadagnare velocit…
+ non vi resta che:
+- Eliminare lo scenario di sfondo (premendo F1 o f3).
+- Oppure, diminuire la larghezza dello schermo di gioco. (tasti F6, F7).
+  (la larghezza dello schermo di gioco pu• per• essere regolata solo
+  se Š presente un solo giocatore).
+
+Chiaramente, installare il gioco sull'hard disk render… pi— veloci 
+tutte le fasi di lettura dei files.
+Suggerimenti o commenti sono ben accetti, inviateli all'indirizzo riportato.
+
+Buona fortuna per la vostra entusiasmante missione di distruzione totale!!
+
+
+
+
+SUGGERIMENTO: al primo livello, tenendo spinti i tasti 'destra' e 'sinistra'
+insieme per circa 10 secondi, salterete al livello 7.

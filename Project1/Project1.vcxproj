@@ -179,6 +179,7 @@
     <ClCompile Include="ObjectManager.cpp" />
     <ClCompile Include="ParticlesBomb.cpp" />
     <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="RandomBuildingGenerator.cpp" />
     <ClCompile Include="renderer.cpp" />
     <ClCompile Include="ScoreBoard.cpp" />
   </ItemGroup>
@@ -191,6 +192,7 @@
     <ClInclude Include="Bomb2.h" />
     <ClInclude Include="BombContainer.h" />
     <ClInclude Include="Corpse.h" />
+    <ClInclude Include="createType.h" />
     <ClInclude Include="helperFunctions.h" />
     <ClInclude Include="ItemCrate.h" />
     <ClInclude Include="ExitButton.h" />
@@ -221,6 +223,7 @@
     <ClInclude Include="ObjectNames.h" />
     <ClInclude Include="ParticlesBomb.h" />
     <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="RandomBuildingGenerator.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="ScoreBoard.h" />

@@ -34,6 +34,7 @@ class ObjectManager {
 		ObjectManager( Renderer * temp);
 
 		//Functions that add a specific object.
+		void addRandomBuildingGenerator(float x, float y, float width, float height);
 		void addBlock(float x, float y, float width, float height);
 		void addBlock2(float x, float y, float width, float height);
 		void addFloor(float tempX, float tempY, float tempWidth, float tempHeight);

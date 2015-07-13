@@ -1,4 +1,4 @@
-﻿Build started 4/13/2015 6:03:55 PM.
+﻿Build started 7/13/2015 9:33:04 AM.
      1>Project "B:\Game\Project1\Project1.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "4.0".
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (entry point):
@@ -21,7 +21,7 @@
      1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveReferences" depends on it):
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "_PrepareForReferenceResolution" in project "Project1.vcxproj".
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;renderer.cpp;ScoreBoard.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;RandomBuildingGenerator.cpp;renderer.cpp;ScoreBoard.cpp'!='' and 'false'=='true' and '' != 'false').
      1>Target "BeforeResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "BeforeResolveReferences" in project "Project1.vcxproj".
      1>Target "AssignProjectConfiguration" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveReferences" depends on it):
@@ -52,7 +52,7 @@
      1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "PrepareForBuild" depends on it):
        Using "SetEnv" task from assembly "Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "SetEnv"
-         PATH=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.0\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files (x86)\Microsoft Visual Studio 11.0\;C:\Windows\SysWow64;;C:\Users\Chris\AppData\Local\Microsoft\WDExpress\11.0\Extensions\5kmagnn4.pit\NativeBinaries/x86;;C:\Program Files (x86)\Skype\Phone\;B:\Java\jdk\bin;F:\CMake\bin;F:\Git\bin;F:\android-sdk-windows\tools;F:\android_ndk_32\android-ndk-r10d;F:\mingw\mingw32\bin;F:\android-sdk-windows\platform-tools;F:\apache-ant-1.9.4\bin;
+         PATH=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.0\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files (x86)\Microsoft Visual Studio 11.0\;C:\Windows\SysWow64;;C:\Users\Chris\AppData\Local\Microsoft\WDExpress\11.0\Extensions\5kmagnn4.pit\NativeBinaries/x86;C:\Program Files (x86)\Skype\Phone\;F:\software\matlab\runtime\win64;F:\software\matlab\bin;F:\software\matlab\polyspace\bin;B:\Ruby200\bin;B:\Java\jdk\bin;F:\CMake\bin;F:\Git\bin;F:\android-sdk-windows\tools;F:\android_ndk_32\android-ndk-r10d;F:\mingw\mingw32\bin;F:\android-sdk-windows\platform-tools;F:\apache-ant-1.9.4\bin;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;
        Done executing task "SetEnv".
        Task "SetEnv" skipped, due to false condition; ('$(_IsNativeEnvironment)' == 'true') was evaluated as ('' == 'true').
        Task "SetEnv"
@@ -93,7 +93,7 @@
        Done executing task "MakeDir".
      1>Done building target "PrepareForBuild" in project "Project1.vcxproj".
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;renderer.cpp;ScoreBoard.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;RandomBuildingGenerator.cpp;renderer.cpp;ScoreBoard.cpp'!='' and 'false'=='true' and '' != 'false').
      1>Target "GetInstalledSDKLocations" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ResolveSDKReferences" depends on it):
        Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
      1>Done building target "GetInstalledSDKLocations" in project "Project1.vcxproj".
@@ -201,15 +201,15 @@
      1>Target "SelectClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "ClCompile" depends on it):
      1>Done building target "SelectClCompile" in project "Project1.vcxproj".
        Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
-       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;renderer.cpp;ScoreBoard.cpp' != '' and 'false' == 'True').
+       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;RandomBuildingGenerator.cpp;renderer.cpp;ScoreBoard.cpp' != '' and 'false' == 'True').
      1>Target "ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ClCompile" depends on it):
        Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'OldStyle' and 'Debug\vc110.pdb' != '' and !Exists(Debug\vc110.pdb)).
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('NotUsing' == 'Create' and ''!='true' and '' == '').
        Using "CL" task from assembly "Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "CL"
-         Using cached input dependency table built from:
-         	B:\Game\Project1\Debug\cl.read.1.tlog
-         Outputs for B:\GAME\PROJECT1\ACTOR.CPP|B:\GAME\PROJECT1\ANIMATION.CPP|B:\GAME\PROJECT1\BLOCK.CPP|B:\GAME\PROJECT1\BLOCK2.CPP|B:\GAME\PROJECT1\BOMB1.CPP|B:\GAME\PROJECT1\BOMB2.CPP|B:\GAME\PROJECT1\BOMBCONTAINER.CPP|B:\GAME\PROJECT1\CONTACTLISTENER.CPP|B:\GAME\PROJECT1\CORPSE.CPP|B:\GAME\PROJECT1\ENEMY1.CPP|B:\GAME\PROJECT1\EXITBUTTON.CPP|B:\GAME\PROJECT1\EXPLOSION.CPP|B:\GAME\PROJECT1\FLOOR.CPP|B:\GAME\PROJECT1\GAME.CPP|B:\GAME\PROJECT1\GAMEINFORMATION.CPP|B:\GAME\PROJECT1\GAMESTATS.CPP|B:\GAME\PROJECT1\INIREADER.CPP|B:\GAME\PROJECT1\ITEMCRATE.CPP|B:\GAME\PROJECT1\ITEMLIFE.CPP|B:\GAME\PROJECT1\ITEMPOINTS.CPP|B:\GAME\PROJECT1\KEY.CPP|B:\GAME\PROJECT1\LADDER.CPP|B:\GAME\PROJECT1\LIGHT.CPP|B:\GAME\PROJECT1\LIGHTSMANAGER.CPP|B:\GAME\PROJECT1\LOCK.CPP|B:\GAME\PROJECT1\MAIN.CPP|B:\GAME\PROJECT1\MAPLOADER.CPP|B:\GAME\PROJECT1\MATH.CPP|B:\GAME\PROJECT1\MENU.CPP|B:\GAME\PROJECT1\MENUITEM.CPP|B:\GAME\PROJECT1\MESSAGE.CPP|B:\GAME\PROJECT1\OBJECT.CPP|B:\GAME\PROJECT1\OBJECTMANAGER.CPP|B:\GAME\PROJECT1\PARTICLESBOMB.CPP|B:\GAME\PROJECT1\PARTICLESBOMBFIRE.CPP|B:\GAME\PROJECT1\PARTICLESYSTEM.CPP|B:\GAME\PROJECT1\PLAYBUTTON.CPP|B:\GAME\PROJECT1\RENDERER.CPP|B:\GAME\PROJECT1\SCOREBOARD.CPP:
+         Read Tracking Logs:
+         	Debug\cl.read.1.tlog
+         Outputs for B:\GAME\PROJECT1\ACTOR.CPP|B:\GAME\PROJECT1\ANIMATION.CPP|B:\GAME\PROJECT1\BLOCK.CPP|B:\GAME\PROJECT1\BLOCK2.CPP|B:\GAME\PROJECT1\BOMB1.CPP|B:\GAME\PROJECT1\BOMB2.CPP|B:\GAME\PROJECT1\BOMBCONTAINER.CPP|B:\GAME\PROJECT1\CONTACTLISTENER.CPP|B:\GAME\PROJECT1\CORPSE.CPP|B:\GAME\PROJECT1\ENEMY1.CPP|B:\GAME\PROJECT1\EXITBUTTON.CPP|B:\GAME\PROJECT1\EXPLOSION.CPP|B:\GAME\PROJECT1\FLOOR.CPP|B:\GAME\PROJECT1\GAME.CPP|B:\GAME\PROJECT1\GAMEINFORMATION.CPP|B:\GAME\PROJECT1\GAMESTATS.CPP|B:\GAME\PROJECT1\INIREADER.CPP|B:\GAME\PROJECT1\ITEMCRATE.CPP|B:\GAME\PROJECT1\ITEMLIFE.CPP|B:\GAME\PROJECT1\ITEMPOINTS.CPP|B:\GAME\PROJECT1\KEY.CPP|B:\GAME\PROJECT1\LADDER.CPP|B:\GAME\PROJECT1\LIGHT.CPP|B:\GAME\PROJECT1\LIGHTSMANAGER.CPP|B:\GAME\PROJECT1\LOCK.CPP|B:\GAME\PROJECT1\MAIN.CPP|B:\GAME\PROJECT1\MAPLOADER.CPP|B:\GAME\PROJECT1\MATH.CPP|B:\GAME\PROJECT1\MENU.CPP|B:\GAME\PROJECT1\MENUITEM.CPP|B:\GAME\PROJECT1\MESSAGE.CPP|B:\GAME\PROJECT1\OBJECT.CPP|B:\GAME\PROJECT1\OBJECTMANAGER.CPP|B:\GAME\PROJECT1\PARTICLESBOMB.CPP|B:\GAME\PROJECT1\PARTICLESBOMBFIRE.CPP|B:\GAME\PROJECT1\PARTICLESYSTEM.CPP|B:\GAME\PROJECT1\PLAYBUTTON.CPP|B:\GAME\PROJECT1\RANDOMBUILDINGGENERATOR.CPP|B:\GAME\PROJECT1\RENDERER.CPP|B:\GAME\PROJECT1\SCOREBOARD.CPP:
          	B:\GAME\PROJECT1\DEBUG\ACTOR.OBJ
          	B:\GAME\PROJECT1\DEBUG\ANIMATION.OBJ
          	B:\GAME\PROJECT1\DEBUG\BLOCK.OBJ
@@ -247,12 +247,13 @@
          	B:\GAME\PROJECT1\DEBUG\OBJECTMANAGER.OBJ
          	B:\GAME\PROJECT1\DEBUG\PARTICLESBOMB.OBJ
          	B:\GAME\PROJECT1\DEBUG\PARTICLESYSTEM.OBJ
+         	B:\GAME\PROJECT1\DEBUG\RANDOMBUILDINGGENERATOR.OBJ
          	B:\GAME\PROJECT1\DEBUG\RENDERER.OBJ
          	B:\GAME\PROJECT1\DEBUG\SCOREBOARD.OBJ
          All outputs are up-to-date.
        Done executing task "CL".
      1>Done building target "ClCompile" in project "Project1.vcxproj".
-       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;renderer.cpp;ScoreBoard.cpp' != '' and 'false' == 'True').
+       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;RandomBuildingGenerator.cpp;renderer.cpp;ScoreBoard.cpp' != '' and 'false' == 'True').
      1>Target "AfterClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "AfterClCompile" in project "Project1.vcxproj".
      1>Target "_ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildCompileAction" depends on it):
@@ -360,81 +361,113 @@
      1>Target "Link" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
        Using "Link" task from assembly "Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Link"
-         Using cached output dependency table built from:
-         	B:\Game\Project1\Debug\link.write.1.tlog
-         	B:\Game\Project1\Debug\link.10044-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.10044-rc.write.1.tlog
-         	B:\Game\Project1\Debug\link.10044.write.1.tlog
-         	B:\Game\Project1\Debug\link.6684-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.6684-rc.write.1.tlog
-         	B:\Game\Project1\Debug\link.6684.write.1.tlog
-         	B:\Game\Project1\Debug\link.6816-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.6816-rc.write.1.tlog
-         	B:\Game\Project1\Debug\link.6816.write.1.tlog
-         	B:\Game\Project1\Debug\link.8004-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.8004-rc.write.1.tlog
-         	B:\Game\Project1\Debug\link.8004.write.1.tlog
-         	B:\Game\Project1\Debug\link.8188-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.8188-rc.write.1.tlog
-         	B:\Game\Project1\Debug\link.8188.write.1.tlog
-         	B:\Game\Project1\Debug\link.8684-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.8684-rc.write.1.tlog
-         	B:\Game\Project1\Debug\link.8684.write.1.tlog
-         	B:\Game\Project1\Debug\link.8812-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.8812-rc.write.1.tlog
-         	B:\Game\Project1\Debug\link.8812.write.1.tlog
-         	B:\Game\Project1\Debug\link.9380-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.9380-rc.write.1.tlog
-         	B:\Game\Project1\Debug\link.9380.write.1.tlog
-         	B:\Game\Project1\Debug\link-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.10044-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.6684-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.6816-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.8004-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.8188-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.8684-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.8812-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link.9380-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link-cvtres.write.1.tlog
-         	B:\Game\Project1\Debug\link-rc.write.1.tlog
-         Using cached input dependency table built from:
-         	B:\Game\Project1\Debug\link.read.1.tlog
-         	B:\Game\Project1\Debug\link.10044-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.10044-rc.read.1.tlog
-         	B:\Game\Project1\Debug\link.10044.read.1.tlog
-         	B:\Game\Project1\Debug\link.6684-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.6684-rc.read.1.tlog
-         	B:\Game\Project1\Debug\link.6684.read.1.tlog
-         	B:\Game\Project1\Debug\link.6816-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.6816-rc.read.1.tlog
-         	B:\Game\Project1\Debug\link.6816.read.1.tlog
-         	B:\Game\Project1\Debug\link.8004-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.8004-rc.read.1.tlog
-         	B:\Game\Project1\Debug\link.8004.read.1.tlog
-         	B:\Game\Project1\Debug\link.8188-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.8188-rc.read.1.tlog
-         	B:\Game\Project1\Debug\link.8188.read.1.tlog
-         	B:\Game\Project1\Debug\link.8684-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.8684-rc.read.1.tlog
-         	B:\Game\Project1\Debug\link.8684.read.1.tlog
-         	B:\Game\Project1\Debug\link.8812-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.8812-rc.read.1.tlog
-         	B:\Game\Project1\Debug\link.8812.read.1.tlog
-         	B:\Game\Project1\Debug\link.9380-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.9380-rc.read.1.tlog
-         	B:\Game\Project1\Debug\link.9380.read.1.tlog
-         	B:\Game\Project1\Debug\link-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.10044-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.6684-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.6816-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.8004-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.8188-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.8684-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.8812-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link.9380-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link-cvtres.read.1.tlog
-         	B:\Game\Project1\Debug\link-rc.read.1.tlog
-         Outputs for B:\GAME\PROJECT1\DEBUG\ACTOR.OBJ|B:\GAME\PROJECT1\DEBUG\ANIMATION.OBJ|B:\GAME\PROJECT1\DEBUG\BLOCK.OBJ|B:\GAME\PROJECT1\DEBUG\BLOCK2.OBJ|B:\GAME\PROJECT1\DEBUG\BOMB1.OBJ|B:\GAME\PROJECT1\DEBUG\BOMB2.OBJ|B:\GAME\PROJECT1\DEBUG\BOMBCONTAINER.OBJ|B:\GAME\PROJECT1\DEBUG\CONTACTLISTENER.OBJ|B:\GAME\PROJECT1\DEBUG\CORPSE.OBJ|B:\GAME\PROJECT1\DEBUG\ENEMY1.OBJ|B:\GAME\PROJECT1\DEBUG\EXITBUTTON.OBJ|B:\GAME\PROJECT1\DEBUG\EXPLOSION.OBJ|B:\GAME\PROJECT1\DEBUG\FLOOR.OBJ|B:\GAME\PROJECT1\DEBUG\GAME.OBJ|B:\GAME\PROJECT1\DEBUG\GAMEINFORMATION.OBJ|B:\GAME\PROJECT1\DEBUG\GAMESTATS.OBJ|B:\GAME\PROJECT1\DEBUG\INIREADER.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMCRATE.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMLIFE.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMPOINTS.OBJ|B:\GAME\PROJECT1\DEBUG\KEY.OBJ|B:\GAME\PROJECT1\DEBUG\LADDER.OBJ|B:\GAME\PROJECT1\DEBUG\LIGHT.OBJ|B:\GAME\PROJECT1\DEBUG\LIGHTSMANAGER.OBJ|B:\GAME\PROJECT1\DEBUG\LOCK.OBJ|B:\GAME\PROJECT1\DEBUG\MAIN.OBJ|B:\GAME\PROJECT1\DEBUG\MAPLOADER.OBJ|B:\GAME\PROJECT1\DEBUG\MATH.OBJ|B:\GAME\PROJECT1\DEBUG\MENU.OBJ|B:\GAME\PROJECT1\DEBUG\MENUITEM.OBJ|B:\GAME\PROJECT1\DEBUG\MESSAGE.OBJ|B:\GAME\PROJECT1\DEBUG\OBJECT.OBJ|B:\GAME\PROJECT1\DEBUG\OBJECTMANAGER.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESBOMB.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESBOMBFIRE.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESYSTEM.OBJ|B:\GAME\PROJECT1\DEBUG\PLAYBUTTON.OBJ|B:\GAME\PROJECT1\DEBUG\RENDERER.OBJ|B:\GAME\PROJECT1\DEBUG\SCOREBOARD.OBJ:
+         Write Tracking Logs:
+         	Debug\link.write.1.tlog
+         	Debug\link.10044-cvtres.write.1.tlog
+         	Debug\link.10044-rc.write.1.tlog
+         	Debug\link.10044.write.1.tlog
+         	Debug\link.1272-cvtres.write.1.tlog
+         	Debug\link.1272-rc.write.1.tlog
+         	Debug\link.1272.write.1.tlog
+         	Debug\link.2356-cvtres.write.1.tlog
+         	Debug\link.2356-rc.write.1.tlog
+         	Debug\link.2356.write.1.tlog
+         	Debug\link.3792-cvtres.write.1.tlog
+         	Debug\link.3792-rc.write.1.tlog
+         	Debug\link.3792.write.1.tlog
+         	Debug\link.6684-cvtres.write.1.tlog
+         	Debug\link.6684-rc.write.1.tlog
+         	Debug\link.6684.write.1.tlog
+         	Debug\link.6816-cvtres.write.1.tlog
+         	Debug\link.6816-rc.write.1.tlog
+         	Debug\link.6816.write.1.tlog
+         	Debug\link.8004-cvtres.write.1.tlog
+         	Debug\link.8004-rc.write.1.tlog
+         	Debug\link.8004.write.1.tlog
+         	Debug\link.8188-cvtres.write.1.tlog
+         	Debug\link.8188-rc.write.1.tlog
+         	Debug\link.8188.write.1.tlog
+         	Debug\link.8684-cvtres.write.1.tlog
+         	Debug\link.8684-rc.write.1.tlog
+         	Debug\link.8684.write.1.tlog
+         	Debug\link.8812-cvtres.write.1.tlog
+         	Debug\link.8812-rc.write.1.tlog
+         	Debug\link.8812.write.1.tlog
+         	Debug\link.9076-cvtres.write.1.tlog
+         	Debug\link.9076-rc.write.1.tlog
+         	Debug\link.9076.write.1.tlog
+         	Debug\link.9380-cvtres.write.1.tlog
+         	Debug\link.9380-rc.write.1.tlog
+         	Debug\link.9380.write.1.tlog
+         	Debug\link-cvtres.write.1.tlog
+         	Debug\link.10044-cvtres.write.1.tlog
+         	Debug\link.1272-cvtres.write.1.tlog
+         	Debug\link.2356-cvtres.write.1.tlog
+         	Debug\link.3792-cvtres.write.1.tlog
+         	Debug\link.6684-cvtres.write.1.tlog
+         	Debug\link.6816-cvtres.write.1.tlog
+         	Debug\link.8004-cvtres.write.1.tlog
+         	Debug\link.8188-cvtres.write.1.tlog
+         	Debug\link.8684-cvtres.write.1.tlog
+         	Debug\link.8812-cvtres.write.1.tlog
+         	Debug\link.9076-cvtres.write.1.tlog
+         	Debug\link.9380-cvtres.write.1.tlog
+         	Debug\link-cvtres.write.1.tlog
+         	Debug\link-rc.write.1.tlog
+         Read Tracking Logs:
+         	Debug\link.read.1.tlog
+         	Debug\link.10044-cvtres.read.1.tlog
+         	Debug\link.10044-rc.read.1.tlog
+         	Debug\link.10044.read.1.tlog
+         	Debug\link.1272-cvtres.read.1.tlog
+         	Debug\link.1272-rc.read.1.tlog
+         	Debug\link.1272.read.1.tlog
+         	Debug\link.2356-cvtres.read.1.tlog
+         	Debug\link.2356-rc.read.1.tlog
+         	Debug\link.2356.read.1.tlog
+         	Debug\link.3792-cvtres.read.1.tlog
+         	Debug\link.3792-rc.read.1.tlog
+         	Debug\link.3792.read.1.tlog
+         	Debug\link.6684-cvtres.read.1.tlog
+         	Debug\link.6684-rc.read.1.tlog
+         	Debug\link.6684.read.1.tlog
+         	Debug\link.6816-cvtres.read.1.tlog
+         	Debug\link.6816-rc.read.1.tlog
+         	Debug\link.6816.read.1.tlog
+         	Debug\link.8004-cvtres.read.1.tlog
+         	Debug\link.8004-rc.read.1.tlog
+         	Debug\link.8004.read.1.tlog
+         	Debug\link.8188-cvtres.read.1.tlog
+         	Debug\link.8188-rc.read.1.tlog
+         	Debug\link.8188.read.1.tlog
+         	Debug\link.8684-cvtres.read.1.tlog
+         	Debug\link.8684-rc.read.1.tlog
+         	Debug\link.8684.read.1.tlog
+         	Debug\link.8812-cvtres.read.1.tlog
+         	Debug\link.8812-rc.read.1.tlog
+         	Debug\link.8812.read.1.tlog
+         	Debug\link.9076-cvtres.read.1.tlog
+         	Debug\link.9076-rc.read.1.tlog
+         	Debug\link.9076.read.1.tlog
+         	Debug\link.9380-cvtres.read.1.tlog
+         	Debug\link.9380-rc.read.1.tlog
+         	Debug\link.9380.read.1.tlog
+         	Debug\link-cvtres.read.1.tlog
+         	Debug\link.10044-cvtres.read.1.tlog
+         	Debug\link.1272-cvtres.read.1.tlog
+         	Debug\link.2356-cvtres.read.1.tlog
+         	Debug\link.3792-cvtres.read.1.tlog
+         	Debug\link.6684-cvtres.read.1.tlog
+         	Debug\link.6816-cvtres.read.1.tlog
+         	Debug\link.8004-cvtres.read.1.tlog
+         	Debug\link.8188-cvtres.read.1.tlog
+         	Debug\link.8684-cvtres.read.1.tlog
+         	Debug\link.8812-cvtres.read.1.tlog
+         	Debug\link.9076-cvtres.read.1.tlog
+         	Debug\link.9380-cvtres.read.1.tlog
+         	Debug\link-cvtres.read.1.tlog
+         	Debug\link-rc.read.1.tlog
+         Outputs for B:\GAME\PROJECT1\DEBUG\ACTOR.OBJ|B:\GAME\PROJECT1\DEBUG\ANIMATION.OBJ|B:\GAME\PROJECT1\DEBUG\BLOCK.OBJ|B:\GAME\PROJECT1\DEBUG\BLOCK2.OBJ|B:\GAME\PROJECT1\DEBUG\BOMB1.OBJ|B:\GAME\PROJECT1\DEBUG\BOMB2.OBJ|B:\GAME\PROJECT1\DEBUG\BOMBCONTAINER.OBJ|B:\GAME\PROJECT1\DEBUG\CONTACTLISTENER.OBJ|B:\GAME\PROJECT1\DEBUG\CORPSE.OBJ|B:\GAME\PROJECT1\DEBUG\ENEMY1.OBJ|B:\GAME\PROJECT1\DEBUG\EXITBUTTON.OBJ|B:\GAME\PROJECT1\DEBUG\EXPLOSION.OBJ|B:\GAME\PROJECT1\DEBUG\FLOOR.OBJ|B:\GAME\PROJECT1\DEBUG\GAME.OBJ|B:\GAME\PROJECT1\DEBUG\GAMEINFORMATION.OBJ|B:\GAME\PROJECT1\DEBUG\GAMESTATS.OBJ|B:\GAME\PROJECT1\DEBUG\INIREADER.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMCRATE.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMLIFE.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMPOINTS.OBJ|B:\GAME\PROJECT1\DEBUG\KEY.OBJ|B:\GAME\PROJECT1\DEBUG\LADDER.OBJ|B:\GAME\PROJECT1\DEBUG\LIGHT.OBJ|B:\GAME\PROJECT1\DEBUG\LIGHTSMANAGER.OBJ|B:\GAME\PROJECT1\DEBUG\LOCK.OBJ|B:\GAME\PROJECT1\DEBUG\MAIN.OBJ|B:\GAME\PROJECT1\DEBUG\MAPLOADER.OBJ|B:\GAME\PROJECT1\DEBUG\MATH.OBJ|B:\GAME\PROJECT1\DEBUG\MENU.OBJ|B:\GAME\PROJECT1\DEBUG\MENUITEM.OBJ|B:\GAME\PROJECT1\DEBUG\MESSAGE.OBJ|B:\GAME\PROJECT1\DEBUG\OBJECT.OBJ|B:\GAME\PROJECT1\DEBUG\OBJECTMANAGER.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESBOMB.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESBOMBFIRE.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESYSTEM.OBJ|B:\GAME\PROJECT1\DEBUG\PLAYBUTTON.OBJ|B:\GAME\PROJECT1\DEBUG\RANDOMBUILDINGGENERATOR.OBJ|B:\GAME\PROJECT1\DEBUG\RENDERER.OBJ|B:\GAME\PROJECT1\DEBUG\SCOREBOARD.OBJ:
          	B:\GAME\DEBUG\BOMBDUDE.ILK
          	B:\GAME\DEBUG\BOMBDUDE.EXE
          	B:\GAME\DEBUG\BOMBDUDE.PDB
@@ -559,4 +592,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.11
+Time Elapsed 00:00:00.46

@@ -26,6 +26,7 @@ class Renderer{
 		sf::Vector2i mouseCoordinates;
 		bool mouseIsPressed;
 		sf::View view;
+		sf::View viewMenu;
 		sf::Sprite background;
 
 		float backgroundX,backgroundY;

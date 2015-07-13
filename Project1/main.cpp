@@ -22,6 +22,10 @@ int main(){
 					return 0;
 				}
 
+				if(event.type == sf::Event::Resized){
+					game.resizeRenderers( event.size.width, event.size.height);
+				}
+
 		}
 		float elapsed = time.asSeconds();
 		time = clock.restart();

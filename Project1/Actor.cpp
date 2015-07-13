@@ -6,7 +6,7 @@
 void Actor::initialize(float width, float height){
 	type = ObjectName::ACTOR;
 	health = 3;
-	movementSpeed = 1.0f;
+	movementSpeed = 10.0f;
 	animation.setTexture(visual->getTexture("resources/textures/karakter.png"));
 	animation.getPositionFile("resources/textures/karakter.xml");
 	animation.setArea(0,30);
@@ -20,11 +20,11 @@ void Actor::initialize(float width, float height){
 
 	//Set a shape.
 	b2PolygonShape dynamicBox;
-	dynamicBox.SetAsBox(0.4f,0.4f);
+	dynamicBox.SetAsBox(0.2f,0.4f);
 	//Create a fixture.
 	b2FixtureDef fixtureDef;
 	fixtureDef.shape = &dynamicBox; 
-	fixtureDef.density = 6.0f;
+	fixtureDef.density = 10.0f;
 	fixtureDef.friction = 1.0f;
 	fixtureDef.userData = (void *)1;
 
@@ -60,7 +60,7 @@ void Actor::update(float time){
 	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && body->GetLinearVelocity().x < 4){
 		b2Vec2 force = b2Vec2(2.0f, 0.0f);
 		b2Vec2 position = body->GetPosition();
-		body->ApplyLinearImpulse(movementSpeed*force,position,true);
+		body->ApplyLinearImpulse(time*movementSpeed*force,position,true);
 		float s = blocksizeToScale(visual->getBlockSize(), 360);
 		animation.setScale(s,s);
 		animation.setArea(0,30);
@@ -70,15 +70,16 @@ void Actor::update(float time){
 		right = 1;
 	}
 	if(sf::Keyboard::isKeyPressed(sf::Keyboard::C)){
+		Light light(body->GetPosition().x, body->GetPosition().y, 1,sf::Color(255,255,255,40),315.0f,90.0f);
 
-
+		visual->addLight( light );
 	}
 	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && body->GetLinearVelocity().y < 5 && jump && !climbing){
-		b2Vec2 force = b2Vec2(0.0f, -15.0f);
+		b2Vec2 force = b2Vec2(0.0f, -10.0f);
 		b2Vec2 vertical = b2Vec2(body->GetLinearVelocity().x, 0.0f);
 		b2Vec2 position = body->GetPosition();
 		body->SetLinearVelocity(vertical);
-		body->ApplyLinearImpulse(movementSpeed*force, position,true);
+		body->ApplyLinearImpulse(force, position,true);
 		if (jump)
 			animation.rewind();
 		jump = false;
@@ -91,7 +92,7 @@ void Actor::update(float time){
 		if (body->GetLinearVelocity().y > -3){
 			b2Vec2 force = b2Vec2(0.0f, -5.0f);
 			b2Vec2 position = body->GetPosition();
-			body->ApplyLinearImpulse(movementSpeed*force, position,true);
+			body->ApplyLinearImpulse(time*movementSpeed*force, position,true);
 		}
 	}else if (climbing) {
 		b2Vec2 v (body->GetLinearVelocity().x/1.2,0.0f);
@@ -109,7 +110,7 @@ void Actor::update(float time){
 	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && body->GetLinearVelocity().x > -4){
 		b2Vec2 force = b2Vec2(-2.0f, 0.0f);
 		b2Vec2 position = body->GetPosition();
-		body->ApplyLinearImpulse(movementSpeed*force, position,true);
+		body->ApplyLinearImpulse(time*movementSpeed*force, position,true);
 		float s = blocksizeToScale(visual->getBlockSize(), 360);
 		animation.setScale(-s,s);
 		animation.setArea(0,30);
@@ -177,8 +178,11 @@ void Actor::draw(){
 }
 
 void Actor::collision(Object * other, int fixtureID){
+
+	// If the actor moves on the ground he has more force than in the air.
 	if(fixtureID == 2 && (other->type == ObjectName::BLOCK || other->type == ObjectName::FLOOR)){
 		jump = true;
+		movementSpeed = 30.0f;
 	}
 	if (other->type == ObjectName::ENEMY1 && !damageBool ){
 		damageBool = true;
@@ -203,7 +207,11 @@ void Actor::collisionEnd(Object * other, int fixtureID){
 	if(other->type == ObjectName::LADDER ){
 		body->SetGravityScale(1);
 		body->SetAngularDamping(0);
-		movementSpeed = 1.0f;
+		movementSpeed = 10.0f;
 		climbing = false;
+	}
+
+	if(fixtureID == 2 && (other->type == ObjectName::BLOCK || other->type == ObjectName::FLOOR)){
+		movementSpeed = 10.0f;
 	}
 }

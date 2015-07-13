@@ -113,17 +113,19 @@ Game::Game(sf::RenderWindow &w){
 
 	// Initialize intro menu.
 	menu = new Menu(menuRender, this );
-	menu->addPlayButton( (menuRender->getSize().x / 2) / menuRender->getBlockSize() ,1);
-	menu->addExitButton( (menuRender->getSize().x / 2) / menuRender->getBlockSize(), 3);
+	menu->addPlayButton( (menuRender->getSize().x / 2 ) / menuRender->getBlockSize() ,4);
+	menu->addExitButton( (menuRender->getSize().x / 2) / menuRender->getBlockSize(), 6);
+	menu->resizeMenu(w.getSize().x, w.getSize().y);
 
 	// Initialize scoreboard menu.
 	scoreboardMenu = new Menu(menuRender, this);
 	scoreboardMenu->addScoreboard(1,1);
-
+	//scoreboardMenu->resizeMenu(w.getSize().x, w.getSize().y);
+	scoreboardMenu->setBackground("resources/textures/backgroundScoreboard.png");
 
 	objectManager->setGameStats(gameStats);
 
-	mapLoader =new MapLoader(objectManager) ;
+	mapLoader = new MapLoader(objectManager) ;
 	
 	mapLoader->load("map.txt");
 }
@@ -147,4 +149,10 @@ void Game::performSettings(){
 
 void Game::endGame(){
 	window->close();
+}
+
+void Game::resizeRenderers(float width, float height){
+	gameRender->setSize(width, height);
+	menuRender->setSize(width,height);
+	menu->resizeMenu(width,height);
 }

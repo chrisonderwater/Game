@@ -168,6 +168,9 @@
     <ClCompile Include="Light.cpp">
       <Filter>Source Files\Lights</Filter>
     </ClCompile>
+    <ClCompile Include="RandomBuildingGenerator.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjectManager.h">
@@ -298,6 +301,12 @@
     </ClInclude>
     <ClInclude Include="Light.h">
       <Filter>Header Files\light</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomBuildingGenerator.h">
+      <Filter>Header Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="createType.h">
+      <Filter>Header Files\other</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

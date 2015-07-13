@@ -82,7 +82,7 @@ void ScoreBoard::addScore(std::string n, int s){
 
 // Draw scoreboard to the renderer.
 void ScoreBoard::draw(){
-	visual->registerDraw(&background,0);
+	//visual->registerDraw(&background,0);
 	for(int i=0; i < scoreText.size() ; i++){
 		visual->registerDraw(&scoreText.at(i), 2 );
 	}
