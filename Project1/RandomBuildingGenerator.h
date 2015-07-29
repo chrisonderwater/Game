@@ -24,6 +24,16 @@
 #include "Object.h"
 #include <string>
 
+class BuildingBlock{
+public:
+	int width;
+	int height;
+	int x;
+	int y;
+	int matrix[8][8];
+	void load(std::string fileName);
+};
+
 class RandomBuildingGenerator : public Object{
 	public: 
 		void update(float time);
@@ -31,6 +41,7 @@ class RandomBuildingGenerator : public Object{
 		void initialize(float width, float height);
 		void loadMap();
 		void loadBuilding(std::string fileName, int matrix[][200]);
+		void simpleGenerate(int width, int height);
 	private:
 		int buildingWidth;
 		int buildingHeight;

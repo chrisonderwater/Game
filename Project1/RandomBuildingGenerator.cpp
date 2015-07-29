@@ -21,7 +21,8 @@ void RandomBuildingGenerator::initialize(float width, float height){
 	int platePos;
 	int state = 0;
 	int k;
-	loadBuilding("resources/building.txt",matrix);
+	//loadBuilding("resources/building.txt",matrix);
+	simpleGenerate(16, 20);
 	// state 0 ::: nothing to do
 	// state 1 ::: Waiting for another 4.
 
@@ -48,7 +49,7 @@ void RandomBuildingGenerator::initialize(float width, float height){
 						plateCounter++;
 					}else if(matrix[i][j] == 2){
 						plateCounter++;
-						createType(manager, matrix[i][j], body->GetPosition().x + platePos + plateCounter/2 + 0.5 ,body->GetPosition().y - 0.5 - i,plateCounter,1, 0);
+						createType(manager, matrix[i][j], body->GetPosition().x + platePos + plateCounter/2 + 0.5  ,body->GetPosition().y - 0.5 - i,plateCounter,1, 0);
 						state = 0;
 					}
 				}
@@ -84,4 +85,52 @@ void RandomBuildingGenerator::loadBuilding(std::string fileName, int matrix[][20
 
 	buildingHeight = i + 1;
 
+}
+
+void RandomBuildingGenerator::simpleGenerate(int width, int height){
+	buildingHeight = height;
+	buildingWidth  = width;
+
+	BuildingBlock simpleBlock;
+	simpleBlock.load("resources/simple_block1.txt");
+	//loadBuilding("resources/simple_block1.txt", matrix);
+
+	// Copy simpleBlocks into matrix.
+	for(int i=0; i < buildingHeight; i += simpleBlock.height){
+		for (int j = 0; j < buildingWidth; j += simpleBlock.width){
+			for(int k = 0; k < simpleBlock.height; k++){
+				for(int l = 0; l < simpleBlock.width; l++){
+					matrix[i+k][j+l] = simpleBlock.matrix[k][l];
+				}
+			}
+		}
+	}
+}
+
+void BuildingBlock::load(std::string fileName){
+	std::fstream file(fileName);
+	int i = 0;
+	int j = 0;
+
+	bool first = true;
+	char k = file.get();
+
+	while(k != EOF){
+		if( k == '\n'){
+			if(first){
+				first = false;
+				width = j;
+			}
+			i += 1;
+			j = 0;
+		} else {
+
+			// The loadBuilding function 
+			matrix[i][j] = k - '0';
+			j++;
+		}
+		k = file.get();
+	}
+
+	height = i + 1;
 }

@@ -47,7 +47,6 @@
   <object name="key" type="10" x="4486" y="915" width="64" height="55"/>
   <object name="Floor" type="3" x="283" y="139" width="1788" height="2828"/>
   <object name="Floor" type="3" x="4992" y="-432" width="1753" height="5224"/>
-  <object name="Floor" type="3" x="1634" y="-184" width="3365" height="320"/>
   <object name="lock" type="9" x="4800" y="1356" width="96" height="96"/>
   <object name="lock" type="9" x="4704" y="1356" width="96" height="96"/>
   <object name="Random building generator" type="11" x="2690" y="1516" width="56" height="48"/>
