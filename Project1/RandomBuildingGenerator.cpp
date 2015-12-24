@@ -22,7 +22,7 @@ void RandomBuildingGenerator::initialize(float width, float height){
 	int state = 0;
 	int k;
 	//loadBuilding("resources/building.txt",matrix);
-	simpleGenerate(16, 20);
+	simpleGenerate(24, 30);
 	// state 0 ::: nothing to do
 	// state 1 ::: Waiting for another 4.
 

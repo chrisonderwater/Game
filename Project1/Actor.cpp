@@ -56,9 +56,39 @@ void Actor::update(float time){
 	b2Vec2 movement = body->GetLinearVelocity();
 	animation.update(time);
 	visual->setViewCenter(x,y);
+
+	float movX, movY;
+	movX = 0.0f;
+	movY = 0.0f;
+	if (sf::Joystick::isConnected(0)){
+		 movX = sf::Joystick::getAxisPosition(0, sf::Joystick::X);
+		 movX = movX / 100.0f;
+		 if(climbing){
+			 movY = sf::Joystick::getAxisPosition(0, sf::Joystick::Y);
+			 movY = movY / 100.0f;
+		 }
+
+		 if (sf::Joystick::isButtonPressed(0, 1) && !climbing)
+			 movY = -1.0f;
+
+	} else {
+		// Use keyboard.
+		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+			movX = 1;
+		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+			movX = -1;
+		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+			movY = -1;
+		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+			movY = 1;
+
+	}
 	//key shit
-	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && body->GetLinearVelocity().x < 4){
-		b2Vec2 force = b2Vec2(2.0f, 0.0f);
+	if(movX > 0.0f && body->GetLinearVelocity().x < 4){
+		b2Vec2 force = b2Vec2(movX*2.0f, 0.0f);
+		if(climbing){
+			force = b2Vec2(10.0f*movX, 0.0f);
+		}
 		b2Vec2 position = body->GetPosition();
 		body->ApplyLinearImpulse(time*movementSpeed*force,position,true);
 		float s = blocksizeToScale(visual->getBlockSize(), 360);
@@ -74,8 +104,8 @@ void Actor::update(float time){
 
 		visual->addLight( light );
 	}
-	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && body->GetLinearVelocity().y < 5 && jump && !climbing){
-		b2Vec2 force = b2Vec2(0.0f, -10.0f);
+	if(movY < -0.9f && body->GetLinearVelocity().y < 5 && jump && !climbing){
+		b2Vec2 force = b2Vec2(0.0f, movY*10);
 		b2Vec2 vertical = b2Vec2(body->GetLinearVelocity().x, 0.0f);
 		b2Vec2 position = body->GetPosition();
 		body->SetLinearVelocity(vertical);
@@ -87,7 +117,7 @@ void Actor::update(float time){
 		animation.setFPS(120);
 		animation.start();
 		animation.setLoop(false);
-	} else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && climbing){
+	} else if(movY < -0.9f && climbing){
 		animation.start();
 		if (body->GetLinearVelocity().y > -3){
 			b2Vec2 force = b2Vec2(0.0f, -5.0f);
@@ -95,20 +125,23 @@ void Actor::update(float time){
 			body->ApplyLinearImpulse(time*movementSpeed*force, position,true);
 		}
 	}else if (climbing) {
-		b2Vec2 v (body->GetLinearVelocity().x/1.2,0.0f);
+		b2Vec2 v (body->GetLinearVelocity().x/1.4,0.0f);
 		body->SetLinearVelocity(v);
 	}
 
-	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && climbing){
+	if(movY > 0.9f && climbing){
 		animation.start();
 		if (body->GetLinearVelocity().y < 5){
-			b2Vec2 force = b2Vec2(0.0f, 8.0f);
+			b2Vec2 force = b2Vec2(0.0f, movY*8.0f);
 			b2Vec2 position = body->GetPosition();
 			body->ApplyLinearImpulse(movementSpeed*force, position,true);
 		}
 	}
-	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && body->GetLinearVelocity().x > -4){
-		b2Vec2 force = b2Vec2(-2.0f, 0.0f);
+	if(movX < 0.0f && body->GetLinearVelocity().x > -4){
+		b2Vec2 force = b2Vec2(2.0f*movX, 0.0f);
+		if(climbing){
+			force = b2Vec2(10.0f*movX, 0.0f);
+		}
 		b2Vec2 position = body->GetPosition();
 		body->ApplyLinearImpulse(time*movementSpeed*force, position,true);
 		float s = blocksizeToScale(visual->getBlockSize(), 360);

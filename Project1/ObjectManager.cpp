@@ -24,6 +24,7 @@
 #include "ObjectNames.h"
 #include "LightsManager.h"
 
+#include <iostream>
 ObjectManager::ObjectManager(Renderer * temp){
 	renderer = temp;
 	b2Vec2 gravity(0.0f, 10.0f);
@@ -59,7 +60,7 @@ void ObjectManager::addBlock(float x, float y, float width, float height){
 	//Create Box2D body.
 	b2BodyDef bodyDef;
 	bodyDef.userData = temp;
-	bodyDef.type = b2_staticBody;                // <-- Important for dynamic objects!
+	bodyDef.type = b2_dynamicBody;                // <-- Important for dynamic objects!
 	bodyDef.position.Set(x, y);
 	temp->setBody( world->CreateBody(&bodyDef) );
 	//And initialize the object.
@@ -75,7 +76,7 @@ void ObjectManager::addBlock2(float x, float y, float width, float height){
 	//Create Box2D body.
 	b2BodyDef bodyDef;
 	bodyDef.userData = temp;
-	bodyDef.type = b2_staticBody;                // <-- Important for dynamic objects!
+	bodyDef.type = b2_dynamicBody;                // <-- Important for dynamic objects!
 	bodyDef.position.Set(x, y);// Het centrum moet worden meegegeven.
 	temp->setBody( world->CreateBody(&bodyDef) );
 	//And initialize the object.
@@ -114,6 +115,7 @@ void ObjectManager::addActor(float x, float y){
 
 
 void ObjectManager::update(float time){
+	
 	//update objects.
 	for(int i=0;i<objects.size();i++){
 		if (objects[i] != NULL)

@@ -1,4 +1,4 @@
-﻿Build started 7/29/2015 11:45:14 AM.
+﻿Build started 12/22/2015 8:04:21 PM.
      1>Project "B:\Game\Project1\Project1.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "4.0".
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets" from project "B:\Game\Project1\Project1.vcxproj" (entry point):
@@ -52,7 +52,7 @@
      1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "PrepareForBuild" depends on it):
        Using "SetEnv" task from assembly "Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "SetEnv"
-         PATH=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.0\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files (x86)\Microsoft Visual Studio 11.0\;C:\Windows\SysWow64;;C:\Users\Chris\AppData\Local\Microsoft\WDExpress\11.0\Extensions\5kmagnn4.pit\NativeBinaries/x86;C:\Program Files (x86)\Skype\Phone\;F:\software\matlab\runtime\win64;F:\software\matlab\bin;F:\software\matlab\polyspace\bin;B:\Ruby200\bin;B:\Java\jdk\bin;F:\CMake\bin;F:\Git\bin;F:\android-sdk-windows\tools;F:\android-ndk-r10e;F:\mingw\mingw32\bin;F:\android-sdk-windows\platform-tools;F:\apache-ant-1.9.4\bin;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;
+         PATH=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.0\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files (x86)\Microsoft Visual Studio 11.0\;C:\WINDOWS\SysWow64;;C:\Users\Chris\AppData\Local\Microsoft\WDExpress\11.0\Extensions\5kmagnn4.pit\NativeBinaries/x86;C:\Program Files (x86)\Skype\Phone\;F:\software\matlab\runtime\win64;F:\software\matlab\bin;F:\software\matlab\polyspace\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;B:\Ruby200\bin;B:\Java\jdk\bin;F:\CMake\bin;F:\Git\bin;F:\android-sdk-windows\tools;F:\android-ndk-r10e;F:\mingw\mingw32\bin;F:\android-sdk-windows\platform-tools;F:\apache-ant-1.9.4\bin;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;B:\WinPython-64bit-3.3.5.0\python-3.3.5.amd64\Scripts;B:\WinPython-64bit-3.3.5.0\python-3.3.5.amd64;
        Done executing task "SetEnv".
        Task "SetEnv" skipped, due to false condition; ('$(_IsNativeEnvironment)' == 'true') was evaluated as ('' == 'true').
        Task "SetEnv"
@@ -124,7 +124,7 @@
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
-         Touching "Debug\BombDUde.unsuccessfulbuild".
+         Creating "Debug\BombDUde.unsuccessfulbuild" because "AlwaysCreate" was specified.
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "Project1.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
@@ -203,12 +203,12 @@
        Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
        Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Actor.cpp;Animation.cpp;block.cpp;Block2.cpp;Bomb1.cpp;Bomb2.cpp;BombContainer.cpp;Corpse.cpp;ItemCrate.cpp;ExitButton.cpp;ItemLife.cpp;ItemPoints.cpp;Key.cpp;Ladder.cpp;Light.cpp;LightsManager.cpp;lock.cpp;Message.cpp;ParticlesBombfire.cpp;PlayButton.cpp;ContactListener.cpp;Enemy1.cpp;Explosion.cpp;Floor.cpp;Game.cpp;GameInformation.cpp;GameStats.cpp;INIReader.cpp;main.cpp;MapLoader.cpp;math.cpp;Menu.cpp;MenuItem.cpp;object.cpp;ObjectManager.cpp;ParticlesBomb.cpp;ParticleSystem.cpp;RandomBuildingGenerator.cpp;renderer.cpp;ScoreBoard.cpp' != '' and 'false' == 'True').
      1>Target "ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_ClCompile" depends on it):
-       Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'OldStyle' and 'Debug\vc110.pdb' != '' and !Exists(Debug\vc110.pdb)).
+       Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('None' != '' and 'None' != 'OldStyle' and 'Debug\vc110.pdb' != '' and !Exists(Debug\vc110.pdb)).
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('NotUsing' == 'Create' and ''!='true' and '' == '').
        Using "CL" task from assembly "Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "CL"
-         Read Tracking Logs:
-         	Debug\cl.read.1.tlog
+         Using cached input dependency table built from:
+         	B:\Game\Project1\Debug\cl.read.1.tlog
          Outputs for B:\GAME\PROJECT1\ACTOR.CPP|B:\GAME\PROJECT1\ANIMATION.CPP|B:\GAME\PROJECT1\BLOCK.CPP|B:\GAME\PROJECT1\BLOCK2.CPP|B:\GAME\PROJECT1\BOMB1.CPP|B:\GAME\PROJECT1\BOMB2.CPP|B:\GAME\PROJECT1\BOMBCONTAINER.CPP|B:\GAME\PROJECT1\CONTACTLISTENER.CPP|B:\GAME\PROJECT1\CORPSE.CPP|B:\GAME\PROJECT1\ENEMY1.CPP|B:\GAME\PROJECT1\EXITBUTTON.CPP|B:\GAME\PROJECT1\EXPLOSION.CPP|B:\GAME\PROJECT1\FLOOR.CPP|B:\GAME\PROJECT1\GAME.CPP|B:\GAME\PROJECT1\GAMEINFORMATION.CPP|B:\GAME\PROJECT1\GAMESTATS.CPP|B:\GAME\PROJECT1\INIREADER.CPP|B:\GAME\PROJECT1\ITEMCRATE.CPP|B:\GAME\PROJECT1\ITEMLIFE.CPP|B:\GAME\PROJECT1\ITEMPOINTS.CPP|B:\GAME\PROJECT1\KEY.CPP|B:\GAME\PROJECT1\LADDER.CPP|B:\GAME\PROJECT1\LIGHT.CPP|B:\GAME\PROJECT1\LIGHTSMANAGER.CPP|B:\GAME\PROJECT1\LOCK.CPP|B:\GAME\PROJECT1\MAIN.CPP|B:\GAME\PROJECT1\MAPLOADER.CPP|B:\GAME\PROJECT1\MATH.CPP|B:\GAME\PROJECT1\MENU.CPP|B:\GAME\PROJECT1\MENUITEM.CPP|B:\GAME\PROJECT1\MESSAGE.CPP|B:\GAME\PROJECT1\OBJECT.CPP|B:\GAME\PROJECT1\OBJECTMANAGER.CPP|B:\GAME\PROJECT1\PARTICLESBOMB.CPP|B:\GAME\PROJECT1\PARTICLESBOMBFIRE.CPP|B:\GAME\PROJECT1\PARTICLESYSTEM.CPP|B:\GAME\PROJECT1\PLAYBUTTON.CPP|B:\GAME\PROJECT1\RANDOMBUILDINGGENERATOR.CPP|B:\GAME\PROJECT1\RENDERER.CPP|B:\GAME\PROJECT1\SCOREBOARD.CPP:
          	B:\GAME\PROJECT1\DEBUG\ACTOR.OBJ
          	B:\GAME\PROJECT1\DEBUG\ANIMATION.OBJ
@@ -347,10 +347,10 @@
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForLink" in project "Project1.vcxproj".
      1>Target "DoLinkOutputFilesMatch" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('B:\Game\Debug\BombDUde7.exe' == '').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('B:\Game\Debug\BombDUde7.exe' != '' and 'B:\Game\Debug\BombDUde7.exe' != 'B:\Game\Debug\BombDUde7.exe').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('B:\Game\Debug\BombDUde7.exe' != '' and '.exe' != '.exe').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('B:\Game\Debug\BombDUde7.exe' != '' and 'BombDUde7' != 'BombDUde7').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('B:\Game\Debug\BombDUde12.exe' == '').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('B:\Game\Debug\BombDUde12.exe' != '' and 'B:\Game\Debug\BombDUde12.exe' != 'B:\Game\Debug\BombDUde12.exe').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('B:\Game\Debug\BombDUde12.exe' != '' and '.exe' != '.exe').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('B:\Game\Debug\BombDUde12.exe' != '' and 'BombDUde12' != 'BombDUde12').
      1>Done building target "DoLinkOutputFilesMatch" in project "Project1.vcxproj".
      1>Target "PreLinkEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
        Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
@@ -361,105 +361,32 @@
      1>Target "Link" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
        Using "Link" task from assembly "Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Link"
-         Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1480
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"B:\Game\Debug\BombDUde7.exe" /INCREMENTAL /NOLOGO /LIBPATH:"B:\Game\Project1\libs\SFML-2.1\lib" /LIBPATH:B:\Game\Project1\libs\Box2D_v2.3.0\Box2D\Build\vs2012\bin\Debug "sfml-graphics-d.lib" "sfml-system-d.lib" "sfml-window-d.lib" Box2D.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"B:\Game\Debug\BombDUde7.pdb" /PGD:"B:\Game\Debug\BombDUde7.pgd" /LTCG:PGUpdate /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"B:\Game\Debug\BombDUde7.lib" /MACHINE:X86 Debug\Actor.obj
-         Debug\Animation.obj
-         Debug\block.obj
-         Debug\Block2.obj
-         Debug\Bomb1.obj
-         Debug\Bomb2.obj
-         Debug\BombContainer.obj
-         Debug\Corpse.obj
-         Debug\ItemCrate.obj
-         Debug\ExitButton.obj
-         Debug\ItemLife.obj
-         Debug\ItemPoints.obj
-         Debug\Key.obj
-         Debug\Ladder.obj
-         Debug\Light.obj
-         Debug\LightsManager.obj
-         Debug\lock.obj
-         Debug\Message.obj
-         Debug\ParticlesBombfire.obj
-         Debug\PlayButton.obj
-         Debug\ContactListener.obj
-         Debug\Enemy1.obj
-         Debug\Explosion.obj
-         Debug\Floor.obj
-         Debug\Game.obj
-         Debug\GameInformation.obj
-         Debug\GameStats.obj
-         Debug\INIReader.obj
-         Debug\main.obj
-         Debug\MapLoader.obj
-         Debug\math.obj
-         Debug\Menu.obj
-         Debug\MenuItem.obj
-         Debug\object.obj
-         Debug\ObjectManager.obj
-         Debug\ParticlesBomb.obj
-         Debug\ParticleSystem.obj
-         Debug\RandomBuildingGenerator.obj
-         Debug\renderer.obj
-         Debug\ScoreBoard.obj
-         Tracking command:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\Tracker.exe /a /d C:\Windows\Microsoft.NET\Framework\v4.0.30319\FileTracker.dll /i B:\Game\Project1\Debug /r "B:\GAME\PROJECT1\DEBUG\ACTOR.OBJ|B:\GAME\PROJECT1\DEBUG\ANIMATION.OBJ|B:\GAME\PROJECT1\DEBUG\BLOCK.OBJ|B:\GAME\PROJECT1\DEBUG\BLOCK2.OBJ|B:\GAME\PROJECT1\DEBUG\BOMB1.OBJ|B:\GAME\PROJECT1\DEBUG\BOMB2.OBJ|B:\GAME\PROJECT1\DEBUG\BOMBCONTAINER.OBJ|B:\GAME\PROJECT1\DEBUG\CONTACTLISTENER.OBJ|B:\GAME\PROJECT1\DEBUG\CORPSE.OBJ|B:\GAME\PROJECT1\DEBUG\ENEMY1.OBJ|B:\GAME\PROJECT1\DEBUG\EXITBUTTON.OBJ|B:\GAME\PROJECT1\DEBUG\EXPLOSION.OBJ|B:\GAME\PROJECT1\DEBUG\FLOOR.OBJ|B:\GAME\PROJECT1\DEBUG\GAME.OBJ|B:\GAME\PROJECT1\DEBUG\GAMEINFORMATION.OBJ|B:\GAME\PROJECT1\DEBUG\GAMESTATS.OBJ|B:\GAME\PROJECT1\DEBUG\INIREADER.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMCRATE.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMLIFE.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMPOINTS.OBJ|B:\GAME\PROJECT1\DEBUG\KEY.OBJ|B:\GAME\PROJECT1\DEBUG\LADDER.OBJ|B:\GAME\PROJECT1\DEBUG\LIGHT.OBJ|B:\GAME\PROJECT1\DEBUG\LIGHTSMANAGER.OBJ|B:\GAME\PROJECT1\DEBUG\LOCK.OBJ|B:\GAME\PROJECT1\DEBUG\MAIN.OBJ|B:\GAME\PROJECT1\DEBUG\MAPLOADER.OBJ|B:\GAME\PROJECT1\DEBUG\MATH.OBJ|B:\GAME\PROJECT1\DEBUG\MENU.OBJ|B:\GAME\PROJECT1\DEBUG\MENUITEM.OBJ|B:\GAME\PROJECT1\DEBUG\MESSAGE.OBJ|B:\GAME\PROJECT1\DEBUG\OBJECT.OBJ|B:\GAME\PROJECT1\DEBUG\OBJECTMANAGER.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESBOMB.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESBOMBFIRE.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESYSTEM.OBJ|B:\GAME\PROJECT1\DEBUG\PLAYBUTTON.OBJ|B:\GAME\PROJECT1\DEBUG\RANDOMBUILDINGGENERATOR.OBJ|B:\GAME\PROJECT1\DEBUG\RENDERER.OBJ|B:\GAME\PROJECT1\DEBUG\SCOREBOARD.OBJ" /b MSBuildConsole_CancelEvent9aebb4e9f18a4cae9c4d58a6b143176a  /c "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"B:\Game\Debug\BombDUde7.exe" /INCREMENTAL /NOLOGO /LIBPATH:"B:\Game\Project1\libs\SFML-2.1\lib" /LIBPATH:B:\Game\Project1\libs\Box2D_v2.3.0\Box2D\Build\vs2012\bin\Debug "sfml-graphics-d.lib" "sfml-system-d.lib" "sfml-window-d.lib" Box2D.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"B:\Game\Debug\BombDUde7.pdb" /PGD:"B:\Game\Debug\BombDUde7.pgd" /LTCG:PGUpdate /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"B:\Game\Debug\BombDUde7.lib" /MACHINE:X86 Debug\Actor.obj
-         Debug\Animation.obj
-         Debug\block.obj
-         Debug\Block2.obj
-         Debug\Bomb1.obj
-         Debug\Bomb2.obj
-         Debug\BombContainer.obj
-         Debug\Corpse.obj
-         Debug\ItemCrate.obj
-         Debug\ExitButton.obj
-         Debug\ItemLife.obj
-         Debug\ItemPoints.obj
-         Debug\Key.obj
-         Debug\Ladder.obj
-         Debug\Light.obj
-         Debug\LightsManager.obj
-         Debug\lock.obj
-         Debug\Message.obj
-         Debug\ParticlesBombfire.obj
-         Debug\PlayButton.obj
-         Debug\ContactListener.obj
-         Debug\Enemy1.obj
-         Debug\Explosion.obj
-         Debug\Floor.obj
-         Debug\Game.obj
-         Debug\GameInformation.obj
-         Debug\GameStats.obj
-         Debug\INIReader.obj
-         Debug\main.obj
-         Debug\MapLoader.obj
-         Debug\math.obj
-         Debug\Menu.obj
-         Debug\MenuItem.obj
-         Debug\object.obj
-         Debug\ObjectManager.obj
-         Debug\ParticlesBomb.obj
-         Debug\ParticleSystem.obj
-         Debug\RandomBuildingGenerator.obj
-         Debug\renderer.obj
-         Debug\ScoreBoard.obj
-     1>LINK : warning LNK4256: Profile Guided Optimization is not available in this edition of the product; 'PGD:B:\Game\Debug\BombDUde7.pgd' ignored
-     1>LINK : warning LNK4256: Profile Guided Optimization is not available in this edition of the product; 'LTCG:PGUpdate' ignored
-     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
-     1>Bomb1.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
-         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         Using cached output dependency table built from:
+         	B:\Game\Project1\Debug\link.write.1.tlog
+         	B:\Game\Project1\Debug\link-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link-cvtres.write.1.tlog
+         	B:\Game\Project1\Debug\link-rc.write.1.tlog
+         Using cached input dependency table built from:
+         	B:\Game\Project1\Debug\link.read.1.tlog
+         	B:\Game\Project1\Debug\link.read.2.tlog
+         	B:\Game\Project1\Debug\link.read.3.tlog
+         	B:\Game\Project1\Debug\link.read.4.tlog
+         	B:\Game\Project1\Debug\link.read.5.tlog
+         	B:\Game\Project1\Debug\link-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link-cvtres.read.1.tlog
+         	B:\Game\Project1\Debug\link-rc.read.1.tlog
+         Outputs for B:\GAME\PROJECT1\DEBUG\ACTOR.OBJ|B:\GAME\PROJECT1\DEBUG\ANIMATION.OBJ|B:\GAME\PROJECT1\DEBUG\BLOCK.OBJ|B:\GAME\PROJECT1\DEBUG\BLOCK2.OBJ|B:\GAME\PROJECT1\DEBUG\BOMB1.OBJ|B:\GAME\PROJECT1\DEBUG\BOMB2.OBJ|B:\GAME\PROJECT1\DEBUG\BOMBCONTAINER.OBJ|B:\GAME\PROJECT1\DEBUG\CONTACTLISTENER.OBJ|B:\GAME\PROJECT1\DEBUG\CORPSE.OBJ|B:\GAME\PROJECT1\DEBUG\ENEMY1.OBJ|B:\GAME\PROJECT1\DEBUG\EXITBUTTON.OBJ|B:\GAME\PROJECT1\DEBUG\EXPLOSION.OBJ|B:\GAME\PROJECT1\DEBUG\FLOOR.OBJ|B:\GAME\PROJECT1\DEBUG\GAME.OBJ|B:\GAME\PROJECT1\DEBUG\GAMEINFORMATION.OBJ|B:\GAME\PROJECT1\DEBUG\GAMESTATS.OBJ|B:\GAME\PROJECT1\DEBUG\INIREADER.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMCRATE.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMLIFE.OBJ|B:\GAME\PROJECT1\DEBUG\ITEMPOINTS.OBJ|B:\GAME\PROJECT1\DEBUG\KEY.OBJ|B:\GAME\PROJECT1\DEBUG\LADDER.OBJ|B:\GAME\PROJECT1\DEBUG\LIGHT.OBJ|B:\GAME\PROJECT1\DEBUG\LIGHTSMANAGER.OBJ|B:\GAME\PROJECT1\DEBUG\LOCK.OBJ|B:\GAME\PROJECT1\DEBUG\MAIN.OBJ|B:\GAME\PROJECT1\DEBUG\MAPLOADER.OBJ|B:\GAME\PROJECT1\DEBUG\MATH.OBJ|B:\GAME\PROJECT1\DEBUG\MENU.OBJ|B:\GAME\PROJECT1\DEBUG\MENUITEM.OBJ|B:\GAME\PROJECT1\DEBUG\MESSAGE.OBJ|B:\GAME\PROJECT1\DEBUG\OBJECT.OBJ|B:\GAME\PROJECT1\DEBUG\OBJECTMANAGER.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESBOMB.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESBOMBFIRE.OBJ|B:\GAME\PROJECT1\DEBUG\PARTICLESYSTEM.OBJ|B:\GAME\PROJECT1\DEBUG\PLAYBUTTON.OBJ|B:\GAME\PROJECT1\DEBUG\RANDOMBUILDINGGENERATOR.OBJ|B:\GAME\PROJECT1\DEBUG\RENDERER.OBJ|B:\GAME\PROJECT1\DEBUG\SCOREBOARD.OBJ:
+         	B:\GAME\DEBUG\BOMBDUDE12.EXE
+         All outputs are up-to-date.
        Done executing task "Link".
        Task "Message"
-         Project1.vcxproj -> B:\Game\Debug\BombDUde7.exe
+         Project1.vcxproj -> B:\Game\Debug\BombDUde12.exe
        Done executing task "Message".
      1>Done building target "Link" in project "Project1.vcxproj".
        Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
        Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false') was evaluated as ('false'!='' and 'false'!='false').
        Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
-     1>Target "ComputeLinkImportLibraryOutputsForClean" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
-       Task "WriteLinesToFile" skipped, due to false condition; ('@(_LinkImportLibrary)' != '') was evaluated as ('' != '').
-     1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "Project1.vcxproj".
+       Target "ComputeLinkImportLibraryOutputsForClean" skipped, due to false condition; ('$(LinkSkippedExecution)' != 'true') was evaluated as ('True' != 'true').
      1>Target "AfterLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_Link" depends on it):
      1>Done building target "AfterLink" in project "Project1.vcxproj".
      1>Target "_Link" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
@@ -470,13 +397,7 @@
      1>Target "_Manifest" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
      1>Done building target "_Manifest" in project "Project1.vcxproj".
-     1>Target "RegisterOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_BuildLinkAction" depends on it):
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'!='true').
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'=='true').
-       Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
-     1>Done building target "RegisterOutput" in project "Project1.vcxproj".
+       Target "RegisterOutput" skipped, due to false condition; ('$(EmbedManifest)'=='true' and '$(LinkSkippedExecution)' != 'true' and ('$(_IsNativeEnvironment)' == 'true' or '$(Platform)' == 'Win32')) was evaluated as ('true'=='true' and 'True' != 'true' and ('' == 'true' or 'Win32' == 'Win32')).
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
      1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets" from project "B:\Game\Project1\Project1.vcxproj" (target "_XdcMake" depends on it):
@@ -577,4 +498,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.67
+Time Elapsed 00:00:00.10

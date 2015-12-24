@@ -19,7 +19,7 @@ void Block2::initialize(float width, float height){
 	//And set its properties.
 	b2FixtureDef fixtureDef;        //A polygon is just a part of a fixture ...
 	fixtureDef.shape = &dynamicBox;
-	fixtureDef.density = 2.0f;      // <- Now body will react to its environment.
+	fixtureDef.density = 5.0f;      // <- Now body will react to its environment.
 	fixtureDef.friction = 2.0f;
 	//And bind fixture to the body.
 	body->CreateFixture(&fixtureDef);

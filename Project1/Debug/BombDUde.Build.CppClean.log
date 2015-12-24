@@ -1,4 +1,3 @@
-B:\GAME\PROJECT1\DEBUG\PLAYBUTTON.OBJ
 B:\GAME\PROJECT1\DEBUG\CONTACTLISTENER.OBJ
 B:\GAME\PROJECT1\DEBUG\ENEMY1.OBJ
 B:\GAME\PROJECT1\DEBUG\EXPLOSION.OBJ
@@ -16,6 +15,7 @@ B:\GAME\PROJECT1\DEBUG\OBJECT.OBJ
 B:\GAME\PROJECT1\DEBUG\OBJECTMANAGER.OBJ
 B:\GAME\PROJECT1\DEBUG\PARTICLESBOMB.OBJ
 B:\GAME\PROJECT1\DEBUG\PARTICLESYSTEM.OBJ
+B:\GAME\PROJECT1\DEBUG\RANDOMBUILDINGGENERATOR.OBJ
 B:\GAME\PROJECT1\DEBUG\RENDERER.OBJ
 B:\GAME\PROJECT1\DEBUG\SCOREBOARD.OBJ
 B:\GAME\PROJECT1\DEBUG\ACTOR.OBJ
@@ -32,9 +32,12 @@ B:\GAME\PROJECT1\DEBUG\ITEMLIFE.OBJ
 B:\GAME\PROJECT1\DEBUG\ITEMPOINTS.OBJ
 B:\GAME\PROJECT1\DEBUG\KEY.OBJ
 B:\GAME\PROJECT1\DEBUG\LADDER.OBJ
+B:\GAME\PROJECT1\DEBUG\LIGHT.OBJ
+B:\GAME\PROJECT1\DEBUG\LIGHTSMANAGER.OBJ
 B:\GAME\PROJECT1\DEBUG\LOCK.OBJ
 B:\GAME\PROJECT1\DEBUG\MESSAGE.OBJ
 B:\GAME\PROJECT1\DEBUG\PARTICLESBOMBFIRE.OBJ
+B:\GAME\PROJECT1\DEBUG\PLAYBUTTON.OBJ
 B:\GAME\PROJECT1\DEBUG\VC110.PDB
 B:\Game\Project1\Debug\Actor.obj
 B:\Game\Project1\Debug\Animation.obj
@@ -58,6 +61,8 @@ B:\Game\Project1\Debug\ItemLife.obj
 B:\Game\Project1\Debug\ItemPoints.obj
 B:\Game\Project1\Debug\Key.obj
 B:\Game\Project1\Debug\Ladder.obj
+B:\Game\Project1\Debug\Light.obj
+B:\Game\Project1\Debug\LightsManager.obj
 B:\Game\Project1\Debug\lock.obj
 B:\Game\Project1\Debug\main.obj
 B:\Game\Project1\Debug\MapLoader.obj
@@ -71,13 +76,21 @@ B:\Game\Project1\Debug\ParticlesBomb.obj
 B:\Game\Project1\Debug\ParticlesBombfire.obj
 B:\Game\Project1\Debug\ParticleSystem.obj
 B:\Game\Project1\Debug\PlayButton.obj
+B:\Game\Project1\Debug\RandomBuildingGenerator.obj
 B:\Game\Project1\Debug\renderer.obj
 B:\Game\Project1\Debug\ScoreBoard.obj
 B:\Game\Project1\Debug\cl.command.1.tlog
 B:\Game\Project1\Debug\CL.read.1.tlog
 B:\Game\Project1\Debug\CL.write.1.tlog
+B:\Game\Project1\Debug\link-cvtres.read.1.tlog
+B:\Game\Project1\Debug\link-cvtres.write.1.tlog
+B:\Game\Project1\Debug\link-rc.read.1.tlog
+B:\Game\Project1\Debug\link-rc.write.1.tlog
 B:\Game\Project1\Debug\link.command.1.tlog
 B:\Game\Project1\Debug\link.read.1.tlog
 B:\Game\Project1\Debug\link.write.1.tlog
 B:\Game\Project1\Debug\vc110.idb
 B:\Game\Project1\Debug\vc110.pdb
+B:\Game\Debug\BombDUde.pdb
+B:\Game\Debug\BombDUde.exe
+B:\Game\Debug\BombDUde.ilk
