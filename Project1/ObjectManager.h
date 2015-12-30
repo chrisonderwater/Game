@@ -17,9 +17,12 @@ ObjectManager has multiple tasks:
 #include "Renderer.h"
 #include <Box2D\Box2D.h>
 
+class Input;
+
 
 class ObjectManager {
 	private:
+		int actorCounter;
 		std::vector< Object * > objects;
 		std::stack<unsigned int> objectsToRemove;
 		std::stack< std::pair<b2Body*, b2BodyType> > bodytypesToChange;
@@ -30,6 +33,7 @@ class ObjectManager {
 		GameStats * gameStats;
 		void removeStep();
 		void rm(const unsigned int id);
+		Input * input;
 	public:
 		ObjectManager( Renderer * temp);
 
@@ -59,6 +63,12 @@ class ObjectManager {
 		void update(float time);
 		void draw();
 		void createWorld();
+
+		// Input functions
+		void setInput(Input * input);
+		Input * getInput();
+
 		void printAmount();
+
 };
 #endif

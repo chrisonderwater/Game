@@ -2,3 +2,6 @@
 *.pdb
 *.tlog
 *.obj
+*.tlog
+*.obj
+*.suo

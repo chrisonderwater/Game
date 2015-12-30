@@ -10,6 +10,7 @@ void Game::update(float time){
 	menuRender->setMousePosition(*window);
 	sf::Vector2f pos;
 	GameState s = state;
+	input.update();
 	switch(s){
 		case GameState::GAME:
 			objectManager->update(time);

@@ -2,6 +2,7 @@
 #include "ObjectManager.h"
 #include "math.h"
 #include "ObjectNames.h"
+#include "Input.h"
 
 void Actor::initialize(float width, float height){
 	type = ObjectName::ACTOR;
@@ -49,6 +50,7 @@ void Actor::initialize(float width, float height){
 	Light light(25, 5, 1,sf::Color(255,255,255,40),90.0f,90.0f);
 
 	visual->addLight( light );
+	input = manager->getInput();
 
 }
 
@@ -60,29 +62,17 @@ void Actor::update(float time){
 	float movX, movY;
 	movX = 0.0f;
 	movY = 0.0f;
-	if (sf::Joystick::isConnected(0)){
-		 movX = sf::Joystick::getAxisPosition(0, sf::Joystick::X);
-		 movX = movX / 100.0f;
+
+	InputVars inputVars = input->getInput(1);
 		 if(climbing){
-			 movY = sf::Joystick::getAxisPosition(0, sf::Joystick::Y);
-			 movY = movY / 100.0f;
+			 movY = inputVars.up;
 		 }
 
-		 if (sf::Joystick::isButtonPressed(0, 1) && !climbing)
-			 movY = -1.0f;
+		movX = inputVars.right;
+		movY = inputVars.up;
 
-	} else {
-		// Use keyboard.
-		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-			movX = 1;
-		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-			movX = -1;
-		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-			movY = -1;
-		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-			movY = 1;
+	// --- end input part
 
-	}
 	//key shit
 	if(movX > 0.0f && body->GetLinearVelocity().x < 4){
 		b2Vec2 force = b2Vec2(movX*2.0f, 0.0f);
@@ -153,6 +143,7 @@ void Actor::update(float time){
 		right = 0;
 	}
 
+
 	if( (body->GetLinearVelocity().x > -1.0f && body->GetLinearVelocity().x < 1.0f) && standingTimer < 5.0f && jump){
 		animation.stop();
 
@@ -172,7 +163,7 @@ void Actor::update(float time){
 		animation.stop();
 	} 
 
-	if(sf::Keyboard::isKeyPressed(sf::Keyboard::B) && bombTimer > 0.2){
+	if(inputVars.fire_bomb && bombTimer > 0.2){
 		if (right)
 			manager->addBomb1(body->GetPosition().x,body->GetPosition().y,0.5,0.5, pointDirection(body->GetPosition().x,body->GetPosition().x+1,body->GetPosition().y,body->GetPosition().y));
 		else
@@ -247,4 +238,8 @@ void Actor::collisionEnd(Object * other, int fixtureID){
 	if(fixtureID == 2 && (other->type == ObjectName::BLOCK || other->type == ObjectName::FLOOR)){
 		movementSpeed = 10.0f;
 	}
+}
+
+void Actor::setActorId(int actorId){
+	this->actorId = actorId;
 }

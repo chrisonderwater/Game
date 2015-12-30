@@ -20,6 +20,7 @@
 #include "Key.h"
 #include "Message.h"
 #include "RandomBuildingGenerator.h"
+#include "Input.h"
 
 #include "ObjectNames.h"
 #include "LightsManager.h"
@@ -33,6 +34,8 @@ ObjectManager::ObjectManager(Renderer * temp){
 	world->SetContactListener(&listener);
 	lightsManager = new LightsManager(world,renderer);
 	lightsManager->setLights( renderer->getLights() );
+	actorCounter = 0;
+	input = new Input;
 }
 
 void ObjectManager::addRandomBuildingGenerator(float x, float y, float width, float height){
@@ -100,7 +103,9 @@ void ObjectManager::addFloor(float tempX, float tempY, float tempWidth, float te
 }
 
 void ObjectManager::addActor(float x, float y){
-	Object * temp = new Actor;
+	Actor * temp = new Actor;
+	temp->setActorId(actorCounter);
+	actorCounter++;
 	objects.push_back(temp);
 	objects.back()->setID( objects.size()-1 );
 
@@ -116,6 +121,7 @@ void ObjectManager::addActor(float x, float y){
 
 void ObjectManager::update(float time){
 	
+	input->update();
 	//update objects.
 	for(int i=0;i<objects.size();i++){
 		if (objects[i] != NULL)
@@ -161,6 +167,12 @@ void ObjectManager::remove(const unsigned int id){
 }
 
 void ObjectManager::rm(const unsigned int id){
+	//If actor is removed the actor counter should decrease.
+	Object * test;
+	if(objects.at(id)->type == ObjectName::ACTOR){
+		actorCounter--;
+	}
+
 	//Nooit geweten dat h	et zo makkelijk zou zijn ... Meteen gesorteerd.
 	if (id < objects.size() ){
 		objects.back()->setID(id);
@@ -169,6 +181,7 @@ void ObjectManager::rm(const unsigned int id){
 		std::swap(objects.at(id), objects.back() );
 		objects.pop_back();
 	}
+
 }
 
 void ObjectManager::removeStep(){
@@ -371,6 +384,14 @@ void ObjectManager::changeBodytype(b2Body * b, b2BodyType t){
 	temp.first = b;
 	temp.second = t;
 	bodytypesToChange.push(temp);
+}
+
+void ObjectManager::setInput(Input * input){
+	this->input = input;
+}
+
+Input * ObjectManager::getInput(){
+	return input;
 }
 
 

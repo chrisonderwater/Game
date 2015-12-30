@@ -12,6 +12,7 @@
 #include "Settings.h"
 #include "GameStats.h"
 #include "GameInfo.h"
+#include "Input.h"
 #include <string>
 
 class Menu;
@@ -38,6 +39,7 @@ class Game {
 		GameInfo * gameInfo;
 		GameStats * gameStats;
 		bool isGameWon;
+		Input input;
 
 	public:
 		Game(sf::RenderWindow &w);
