@@ -5,3 +5,7 @@
 *.tlog
 *.obj
 *.suo
+game.sdf
+*.suo
+*.obj
+*.idb
