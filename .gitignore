@@ -9,3 +9,5 @@ game.sdf
 *.suo
 *.obj
 *.idb
+Debug/*
+Project1/Debug/*
