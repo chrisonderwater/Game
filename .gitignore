@@ -11,3 +11,6 @@ game.sdf
 *.idb
 Debug/*
 Project1/Debug/*
+Project1/Debug/**
+Project1\Debug\*
+Project1\Debug\**
