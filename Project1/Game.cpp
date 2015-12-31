@@ -5,6 +5,8 @@
 
 
 void Game::update(float time){
+	if( time > 0.1)
+		time = 0.1;
 	// Alleen de window weet iets over de mouse position.
 	gameRender->setMousePosition(*window);
 	menuRender->setMousePosition(*window);
