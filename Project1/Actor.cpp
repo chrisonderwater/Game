@@ -63,7 +63,7 @@ void Actor::update(float time){
 	movX = 0.0f;
 	movY = 0.0f;
 
-	InputVars inputVars = input->getInput(1);
+	InputVars inputVars = input->getInput(0);
 		 if(climbing){
 			 movY = inputVars.up;
 		 }
@@ -159,9 +159,11 @@ void Actor::update(float time){
 		animation.setFPS(60);
 		animation.setLoop(true);
 	}
-	if ( (body->GetLinearVelocity().y > -1.5f || body->GetLinearVelocity().y < 1.5f) && climbing){
+	if ( (body->GetLinearVelocity().y > -0.05f && body->GetLinearVelocity().y < 0.05f) && climbing){
 		animation.stop();
-	} 
+	} else if(climbing){
+		animation.start();
+	}
 
 	if(inputVars.fire_bomb && bombTimer > 0.2){
 		if (right)
@@ -222,7 +224,7 @@ void Actor::collision(Object * other, int fixtureID){
 		climbing = true;
 		animation.setArea(175,60);
 		animation.setFPS(40);
-		animation.start();
+		//animation.start();
 		animation.setLoop(true);
 	}
 }
