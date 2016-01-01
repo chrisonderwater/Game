@@ -31,7 +31,7 @@ void Actor::initialize(float width, float height){
 
 	//Create a jump sensor.
 	b2PolygonShape littlebox;
-	littlebox.SetAsBox(0.05f,0.05f, b2Vec2(0,0.4f),0);
+	littlebox.SetAsBox(0.2f,0.05f, b2Vec2(0,0.4f),0);
 	b2FixtureDef fixtureDef2;
 	fixtureDef2.shape = &littlebox; 
 	fixtureDef2.isSensor = true;
@@ -75,9 +75,9 @@ void Actor::update(float time){
 
 	//key shit
 	if(movX > 0.0f && body->GetLinearVelocity().x < 4){
-		b2Vec2 force = b2Vec2(movX*2.0f, 0.0f);
+		b2Vec2 force = b2Vec2(movX*4.0f, 0.0f);
 		if(climbing){
-			force = b2Vec2(10.0f*movX, 0.0f);
+			force = b2Vec2(2000.0f*movX*time, 0.0f);
 		}
 		b2Vec2 position = body->GetPosition();
 		body->ApplyLinearImpulse(time*movementSpeed*force,position,true);
@@ -95,7 +95,7 @@ void Actor::update(float time){
 		visual->addLight( light );
 	}
 	if(movY < -0.9f && body->GetLinearVelocity().y < 5 && jump && !climbing){
-		b2Vec2 force = b2Vec2(0.0f, movY*10);
+		b2Vec2 force = b2Vec2(0.0f, movY*20);
 		b2Vec2 vertical = b2Vec2(body->GetLinearVelocity().x, 0.0f);
 		b2Vec2 position = body->GetPosition();
 		body->SetLinearVelocity(vertical);
@@ -109,8 +109,8 @@ void Actor::update(float time){
 		animation.setLoop(false);
 	} else if(movY < -0.9f && climbing){
 		animation.start();
-		if (body->GetLinearVelocity().y > -3){
-			b2Vec2 force = b2Vec2(0.0f, -5.0f);
+		if (body->GetLinearVelocity().y > -5){
+			b2Vec2 force = b2Vec2(0.0f, movY*16.0f);
 			b2Vec2 position = body->GetPosition();
 			body->ApplyLinearImpulse(time*movementSpeed*force, position,true);
 		}
@@ -121,23 +121,23 @@ void Actor::update(float time){
 
 	if(movY > 0.9f && climbing){
 		animation.start();
-		if (body->GetLinearVelocity().y < 5){
-			b2Vec2 force = b2Vec2(0.0f, movY*8.0f);
+		if (body->GetLinearVelocity().y < 50){
+			b2Vec2 force = b2Vec2(0.0f, movY*50.0f);
 			b2Vec2 position = body->GetPosition();
-			body->ApplyLinearImpulse(movementSpeed*force, position,true);
+			body->ApplyLinearImpulse( (movementSpeed*time * force ), position,true);
 		}
 	}
 	if(movX < 0.0f && body->GetLinearVelocity().x > -4){
-		b2Vec2 force = b2Vec2(2.0f*movX, 0.0f);
+		b2Vec2 force = b2Vec2(4.0f*movX, 0.0f);
 		if(climbing){
-			force = b2Vec2(10.0f*movX, 0.0f);
+			force = b2Vec2(2000.0f*movX*time, 0.0f);
 		}
 		b2Vec2 position = body->GetPosition();
 		body->ApplyLinearImpulse(time*movementSpeed*force, position,true);
 		float s = blocksizeToScale(visual->getBlockSize(), 360);
 		animation.setScale(-s,s);
 		animation.setArea(0,30);
-		animation.setFPS(60);
+		animation.setFPS(60); 
 		animation.setLoop(true);
 		animation.start();
 		right = 0;
@@ -159,7 +159,7 @@ void Actor::update(float time){
 		animation.setFPS(60);
 		animation.setLoop(true);
 	}
-	if ( (body->GetLinearVelocity().y > -0.05f && body->GetLinearVelocity().y < 0.05f) && climbing){
+	if ( (body->GetLinearVelocity().y > -0.05f  && body->GetLinearVelocity().y < 0.05f) && climbing){
 		animation.stop();
 	} else if(climbing){
 		animation.start();
