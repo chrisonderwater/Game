@@ -17,7 +17,6 @@ float pointDistance(int x1, int x2, int y1, int y2);
 b2Vec2 directionPoint(float x, float y,float direction, float speed);
 
 bool isEven(int number);
-int round(float n);
 
 float blocksizeToScale(int blockSize, int pictureSize);
 #endif

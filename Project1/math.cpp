@@ -60,6 +60,4 @@ float pointDistance(int x1, int x2, int y1, int y2){
 	return  static_cast<float>(blockSize) / static_cast<float>(pictureSize) ;
  }
 
- int round(float n){
-	return static_cast<int>(n+0.5);
-}
+
