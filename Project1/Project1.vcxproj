@@ -85,12 +85,12 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <AdditionalOptions>/arch:AVX %(AdditionalOptions)</AdditionalOptions>
-      <DebugInformationFormat>None</DebugInformationFormat>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <OmitFramePointers>true</OmitFramePointers>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>B:\Game\Project1\libs\SFML-2.1\lib;B:\Game\Project1\libs\Box2D_v2.3.0\Box2D\Build\vs2012\bin\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-graphics-d.lib;sfml-system-d.lib;sfml-window-d.lib;Box2D.lib</AdditionalDependencies>
     </Link>
@@ -158,6 +158,7 @@
     <ClCompile Include="Bomb2.cpp" />
     <ClCompile Include="BombContainer.cpp" />
     <ClCompile Include="Corpse.cpp" />
+    <ClCompile Include="Input.cpp" />
     <ClCompile Include="ItemCrate.cpp" />
     <ClCompile Include="ExitButton.cpp" />
     <ClCompile Include="ItemLife.cpp" />
@@ -202,6 +203,7 @@
     <ClInclude Include="Corpse.h" />
     <ClInclude Include="createType.h" />
     <ClInclude Include="helperFunctions.h" />
+    <ClInclude Include="Input.h" />
     <ClInclude Include="ItemCrate.h" />
     <ClInclude Include="ExitButton.h" />
     <ClInclude Include="ItemLife.h" />

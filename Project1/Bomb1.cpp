@@ -36,8 +36,6 @@ void Bomb1::initialize(float width, float height){
 
 	temp = directionPoint(0,0, rotation, 0.6);
 	temp.x *= 20;
-	std::cout << "direction: " << rotation << std::endl;
-	std::cout << "directionpoint " << temp.x << "," << temp.y << std::endl;
 	body->ApplyLinearImpulse(temp, body->GetPosition(),true);
 }
 
