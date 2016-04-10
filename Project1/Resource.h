@@ -74,6 +74,7 @@ T * Resource<T> ::get(std::string name){
 	} else {
 		//Als het plaatje er nog niet is, laad je het.
 		T * plaatje(new T);
+
 		plaatje->loadFromFile(name);
 		plaatje->setSmooth(true);
 		resources.push_back(plaatje);

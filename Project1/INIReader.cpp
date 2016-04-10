@@ -27,7 +27,7 @@ void INIReader::read(std::string fileName){
 	while( !file.eof() ){
 		if (k == '#'){ 
 			// Ignore all the hashtags! 
-			while(k != '\n')
+			while(k != '\n' && k != '\r')
 				k = file.get();
 		} else if (k == '[')
 			mode = 0;
@@ -42,15 +42,15 @@ void INIReader::read(std::string fileName){
 			mode = 2;
 			elements.value.back().key.push_back(temp);
 			temp = "";
-		} else if (mode == 1 && k != '\n'){
+		} else if (mode == 1 && (k != '\n' && k != '\r')){
 			//Substract the parameter!
 			temp.push_back(k);
-		}else if (mode == 0 && k!='\n'){
+		}else if (mode == 0 && (k!='\n' && k!='\r')){
 			// This is the key!
 			temp.push_back(k);
 		} else if ( mode == 2){
 			// And then there was value.
-			if ( k == '\n' ){
+			if ( (k == '\n' || k == '\r') ){
 				mode = 0;
 				elements.value.back().value.push_back(temp);
 				temp = "";
