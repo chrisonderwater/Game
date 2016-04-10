@@ -8,15 +8,15 @@
 void ContactListener::BeginContact(b2Contact * contact){
 	Object * object1 = static_cast<Object *> (contact->GetFixtureA()->GetBody()->GetUserData());
 	Object * object2 =  static_cast<Object *> (contact->GetFixtureB()->GetBody()->GetUserData());
-	object1->collision(object2 ,(int)contact->GetFixtureA()->GetUserData());
-	object2->collision(object1, (int)contact->GetFixtureB()->GetUserData());
+	object1->collision(object2 ,(long)contact->GetFixtureA()->GetUserData());
+	object2->collision(object1, (long)contact->GetFixtureB()->GetUserData());
 }
 
 void ContactListener::EndContact(b2Contact * contact){
 	Object * object1 = static_cast<Object *> (contact->GetFixtureA()->GetBody()->GetUserData());
 	Object * object2 =  static_cast<Object *> (contact->GetFixtureB()->GetBody()->GetUserData());
-	object1->collisionEnd(object2 ,(int)contact->GetFixtureA()->GetUserData());
-	object2->collisionEnd(object1, (int)contact->GetFixtureB()->GetUserData());
+	object1->collisionEnd(object2 ,(long)contact->GetFixtureA()->GetUserData());
+	object2->collisionEnd(object1, (long)contact->GetFixtureB()->GetUserData());
 }
 
 // List objects that neglect collisions.

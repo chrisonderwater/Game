@@ -1,8 +1,0 @@
-C:/Users/Chris/code/box2d/CMakeFiles/ALL_BUILD.dir
-C:/Users/Chris/code/box2d/Box2D/CMakeFiles/Box2D.dir
-C:/Users/Chris/code/box2d/Box2D/CMakeFiles/Box2D_shared.dir
-C:/Users/Chris/code/box2d/HelloWorld/CMakeFiles/HelloWorld.dir
-C:/Users/Chris/code/box2d/Testbed/CMakeFiles/Testbed.dir
-C:/Users/Chris/code/box2d/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Chris/code/box2d/freeglut/CMakeFiles/freeglut_static.dir
-C:/Users/Chris/code/box2d/glui/CMakeFiles/glui.dir

@@ -1,7 +1,7 @@
 #include "BlockLight.h"
 #include "math.h"
 #include "ObjectManager.h"
-#include <Box2D\Box2D.h>
+#include <Box2D/Box2D.h>
 
 void BlockLight::initialize(float width, float height){
 	type = ObjectName::BLOCKLIGHT;

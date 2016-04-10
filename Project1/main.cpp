@@ -3,8 +3,8 @@
 #include "ObjectManager.h"
 #include "MapLoader.h"
 #include "Game.h"
-#include <Box2D\Box2D.h>
-#include <SFML\Graphics.hpp>
+#include <Box2D/Box2D.h>
+#include <SFML/Graphics.hpp>
 #include <thread>
 
 void updateThread(Game * game, sf::Window * window, float elapsed){

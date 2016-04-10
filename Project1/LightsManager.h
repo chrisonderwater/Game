@@ -3,7 +3,7 @@
 #define LIGHTSMANAGER_H
 
 #include "Light.h"
-#include <Box2D\Box2D.h>
+#include <Box2D/Box2D.h>
 #include <vector>
 
 class Renderer; 

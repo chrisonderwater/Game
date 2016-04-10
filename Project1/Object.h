@@ -18,7 +18,7 @@ This class "Object" might as well have been called: Box2D object since
 half of the functionality is keeping track of Box2D stuff.
 */
 #include <SFML/Graphics.hpp>
-#include <Box2D\Box2D.h>
+#include <Box2D/Box2D.h>
 #include "Renderer.h"
 #include "ObjectNames.h"
 #include "GameStats.h"

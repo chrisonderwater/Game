@@ -1,7 +1,7 @@
 #include "Block2.h"
 #include "math.h"
 #include "ObjectManager.h"
-#include <Box2D\Box2D.h>
+#include <Box2D/Box2D.h>
 
 void Block2::initialize(float width, float height){
 	type = ObjectName::BLOCK2;

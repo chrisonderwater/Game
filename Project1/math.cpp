@@ -9,7 +9,7 @@ Simpele math functies.
 
 #include "math.h"
 #include <cmath>
-#include <Box2D\Box2D.h>
+#include <Box2D/Box2D.h>
 
 //Convert radian to degree.
 // (Box2D = radians, SFML = degrees!)

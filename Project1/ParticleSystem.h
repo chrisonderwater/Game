@@ -12,7 +12,7 @@ Er is gekozen om het met sprites te doen en hiervoor in ruil iets minder te draw
 Waarschijnlijk is C++ i.c.m. SFML alsnog erg efficient, zelfs op een tablet.*/
 #ifndef PARTS_H
 #define PARTS_H
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include "Renderer.h"
 
 // A sprite with some particle specific attributes.

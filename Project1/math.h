@@ -1,8 +1,8 @@
 //Simple math library.
 #ifndef MATH_H
 #define MATH_H
-#define M_PI 3.1415926535897932384626433832795028841971693993751058209749445923078164062
-#include <Box2D\Box2D.h>
+//#define M_PI 3.1415926535897932384626433832795028841971693993751058209749445923078164062
+#include <Box2D/Box2D.h>
 
 //Convert radian to degree.
 float radiansToDegrees(float radians);

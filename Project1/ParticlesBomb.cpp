@@ -1,7 +1,7 @@
 #include "ParticlesBomb.h"
 #include "math.h"
 #include <cmath>
-#include <Box2D\Box2D.h>
+#include <Box2D/Box2D.h>
 
 // Hoe worden ParticlesBomb geupdate ?
 void ParticlesBomb::update(const float time){
